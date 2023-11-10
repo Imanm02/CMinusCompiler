@@ -14,3 +14,7 @@ KEYWORD | if, else, void, int, while, break, switch, default, case, return
 SYMBOL | ; : , [ ] ( ) { } + - * = < ==
 COMMENT | Any string between a /* and a */ OR any string after a // and before a \n or EOF
 WHITESPACE | blank (ASCII 32), \n (ASCII 10), \r (ASCII 13), \t (ASCII 9), \v (ASCII 11), \f (ASCII 12)
+
+## Maintainer
+
+- [Iman Mohammadi](https://github.com/Imanm02)
