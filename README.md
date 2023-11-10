@@ -56,4 +56,3 @@ In the third phase of the project, an interpreter housed in the `Interpreter fol
 
 - [Iman Mohammadi](https://github.com/Imanm02)
 - [Shayan Salehi](https://github.com/ShayanSalehi81)
-
