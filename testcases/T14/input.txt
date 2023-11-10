@@ -1,0 +1,74 @@
+/* sample 14 */
+
+int main(void){
+    int i;
+    int step;
+    int flag;
+    int abs;
+    int a;
+    int b;
+    int abs2;
+    a = 81;
+    b = 9;
+
+    if (b == 0) {
+        output(0);
+    } else {
+        i = 1;
+        flag = 0;
+    } endif
+
+    if (a < 0) {
+        if (b < 0) {
+            i = 1;
+        } else {
+            i = 0-1;
+        } endif
+    } else {
+        if (b < 0) {
+            i = 0-1;
+        } else {
+            i = 1;
+        } endif
+    } endif
+    step = i;
+    if (i < 0) {
+        abs = (0-i);
+    } else {
+        abs = i;
+    } endif
+    i = i - abs;
+    if (i < 0) {
+        abs = (0-i);
+    } else {
+        abs = i;
+    } endif
+    if (a < 0) {
+        abs2 = (0-a);
+    } else {
+        abs2 = a;
+    } endif
+    if (abs < abs2 + 1) {
+    if (i < 0) {
+        abs = (0-i);
+    } else {
+        abs = i;
+    } endif
+    if (a < 0) {
+        abs2 = (0-a);
+    } else {
+        abs2 = a;
+    } endif
+    while (abs < abs2) {
+        if (i * b == a) {
+            flag = 1;
+            output(i * b);
+            output(a);
+            break;
+        } else {
+            i = i + step;
+        } endif
+    }
+    } endif
+    output(flag);
+}

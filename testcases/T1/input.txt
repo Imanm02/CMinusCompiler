@@ -1,0 +1,15 @@
+/* sample 1 */
+
+void main(void){
+    int a;
+    int b;
+    int c;
+    a = 5;
+    b = 3;
+    c = a + b;
+    if(c < 5){
+    output(b - a);
+    } else {
+    output(c / 2);
+    } endif
+ }

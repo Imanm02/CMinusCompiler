@@ -1,0 +1,17 @@
+/* sample 3 */
+
+void main(void){
+  int day;
+  day = 4;
+
+  switch (day) {
+  case 1:
+    output(1);
+  case 4:
+    output(4);
+  case 4:
+    output(40);
+  default:
+    output(day);
+  }
+ }

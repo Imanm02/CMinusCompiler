@@ -1,0 +1,19 @@
+/*==== Sample S3 ====*/
+int foo(int x){
+	int a;
+	void j;
+	a = 10;
+	output(x);
+	if(a < x){return(1);
+	}
+	else {return(2);
+	} endif
+}
+void main ( void )
+{
+	int a[10];
+	a[3] = foo(2,3);	
+	a[1]= 2 + 3 * foo(a);
+	output (a[1]);
+}
+

@@ -1,0 +1,3 @@
+#4 : Semantic Error! Illegal type of void for 'j'.
+#15 : Semantic Error! Mismatch in numbers of arguments of 'foo'.
+#16 : Semantic Error! Mismatch in type of argument 1 of 'foo'. Expected 'int' but got 'array' instead.

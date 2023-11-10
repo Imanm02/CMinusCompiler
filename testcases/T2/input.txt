@@ -1,0 +1,14 @@
+/* sample 2 */
+
+void main(void){
+  int day;
+  day = 4;
+
+  switch (day) {
+  case 1:
+    output(1);
+    break;
+  default:
+    output(day);
+  }
+ }

@@ -1,0 +1,6 @@
+#9 : Semantic Error! Illegal type of void for 'g'.
+#12 : Semantic Error! Mismatch in type of argument 1 of 'foo2'. Expected 'array' but got 'int' instead.
+#21 : Semantic Error! Type mismatch in operands, Got array instead of int.
+#29 : Semantic Error! No 'while' or 'switch case' found for 'break'.
+#31 : Semantic Error! Mismatch in numbers of arguments of 'foo'.
+#35 : Semantic Error! 'u' is not defined.
