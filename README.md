@@ -48,6 +48,8 @@ The `Code` folder contains several components of the CMinusCompiler:
 
 The `Docs` folder contains docs of the CMinusCompiler project and also the `grammar.txt` file is in the `Phase 2` folder.
 
+For testing each phase of the project, we use the testcases in the `Tests` folder.
+
 ## Maintainer
 
 - [Iman Mohammadi](https://github.com/Imanm02)
