@@ -50,6 +50,8 @@ The `Docs` folder contains docs of the CMinusCompiler project and also the `gram
 
 For testing each phase of the project, we use the testcases in the `Tests` folder.
 
+For phase 3 we also need to use the interpreter in the `Interpreter` folder.
+
 ## Maintainer
 
 - [Iman Mohammadi](https://github.com/Imanm02)
