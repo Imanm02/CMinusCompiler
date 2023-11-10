@@ -1,0 +1,5 @@
+2.	(KEYWORD, void) (ID, main) (SYMBOL, () (KEYWORD, int) (ID, a) (SYMBOL, ,) (KEYWORD, int) (ID, b) (SYMBOL, ,) (ID, Int) (ID, c) (SYMBOL, )) (SYMBOL, {) 
+3.	(KEYWORD, while) (SYMBOL, () (ID, arr) (SYMBOL, [) (ID, g) (SYMBOL, ]) (SYMBOL, ==) (NUM, 12) (SYMBOL, )) (SYMBOL, {) 
+4.	(ID, killed) (SYMBOL, =) (ID, me) (SYMBOL, ;) 
+5.	(ID, a) (SYMBOL, ;) (SYMBOL, =) (SYMBOL, ;) (ID, b) (SYMBOL, -) (SYMBOL, =) (NUM, 3) 
+6.	(KEYWORD, break) (SYMBOL, ;) 

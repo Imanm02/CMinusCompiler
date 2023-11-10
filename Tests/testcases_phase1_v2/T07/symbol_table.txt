@@ -1,0 +1,11 @@
+1.	case
+2.	endif
+3.	if
+4.	return
+5.	break
+6.	while
+7.	switch
+8.	default
+9.	else
+10.	void
+11.	int

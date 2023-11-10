@@ -1,0 +1,5 @@
+2.	(2m, Invalid number) (>, Invalid input) 
+3.	(23a, Invalid number) 
+6.	(=#, Invalid input) 
+11.	(!, Invalid input) 
+13.	(#, Invalid input) 

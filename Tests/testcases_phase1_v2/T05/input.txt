@@ -1,0 +1,13 @@
+int w (int m , int n){
+int a32b32c45 = 54;
+int f = a32b32c45 * 3fd;
+return f; 
+// end of func
+}
+
+void main(void) {
+int b = 34dnd;
+w(b - 1gh, 4);
+h$$$$o&(b); /* inline comment &&&$$$#### ***** */
+
+}

@@ -1,0 +1,15 @@
+void main(void) {
+
+int a = 3d; 
+int b = 100; // def aa
+int c = a * b;  */
+int d = 5 * ( c + b );
+
+if ( d  <  1 ) {
+return 0;
+}
+
+// end of code
+/* unclosed comment 
+second line of unclosed comment
+}

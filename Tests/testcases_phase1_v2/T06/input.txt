@@ -1,0 +1,12 @@
+/* text */
+
+void main (void){
+	int i = 0;
+	while (i < 10){
+		i = i + 1;
+	}
+	int j  = i + 100; // comment
+	int out = i + j;
+	output(out);
+
+}

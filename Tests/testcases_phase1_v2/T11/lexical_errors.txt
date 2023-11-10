@@ -1,0 +1,3 @@
+4.	(*/, Unmatched comment) 
+5.	(^, Invalid input) (&, Invalid input) (2d, Invalid number) ($, Invalid input) (a3#, Invalid input) 
+8.	(/*this ..., Unclosed comment) 

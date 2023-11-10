@@ -1,0 +1,23 @@
+void main (void){
+int $$$$;
+int &&&&;
+int ****;
+int while;
+
+int /*test*/;
+
+
+//comment
+/bad comment
+
+void g (int a){
+void f (int b){
+return 10;
+}
+return f(10);
+}
+
+return -1;
+
+
+}

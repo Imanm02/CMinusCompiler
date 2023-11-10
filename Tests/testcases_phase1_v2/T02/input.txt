@@ -1,0 +1,16 @@
+int m (int a, int b){
+	if (a == 10){
+		while (b < 10000) {
+			b = b * a;
+			if ( b / 13 == 1) {
+				break;
+			}
+		}
+	}
+}
+
+void main (void){
+m();
+int n = 34mn;
+/* main func */
+}

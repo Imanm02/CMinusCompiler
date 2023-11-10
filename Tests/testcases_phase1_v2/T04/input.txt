@@ -1,0 +1,20 @@
+void main (void){
+int n = 34mn;
+int m = 3;
+int p = 32;
+int q = 3 * (m + n);
+while (m <  20 ){
+p = p + 1;
+m = m * 2;
+}
+switch (m) {
+case 3:
+q = 1;
+break;
+case 12:
+q = 5df;
+break;
+default:
+n = /*unclosed comment
+}
+// end of test

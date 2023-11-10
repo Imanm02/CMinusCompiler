@@ -1,0 +1,11 @@
+// Men of quality don't fear equality //#
+void main(int a, int b, Int c) {
+	while (arr[g] == 12){
+		killed = me; */
+		a;=;b-^&2d$a3#=3
+		break;
+		/* this is not wrong */
+		/*this is wrong *
+	return;
+	}
+}

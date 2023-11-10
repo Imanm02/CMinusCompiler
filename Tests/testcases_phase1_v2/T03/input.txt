@@ -1,0 +1,13 @@
+void min(void){
+	if (array[idx]) {
+		a = b; */
+		c = d;
+		if(3 < 2){
+			return;
+		}
+		b = 5 * 123;
+		break;
+		/*this is wrong comment *
+		b = b - 1;
+	}
+}
