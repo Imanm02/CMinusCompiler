@@ -1,0 +1,2988 @@
+{
+    "terminals": [
+        "$",
+        "(",
+        ")",
+        "*",
+        "+",
+        ",",
+        "-",
+        "/",
+        ":",
+        ";",
+        "<",
+        "=",
+        "[",
+        "]",
+        "{",
+        "}",
+        "NUM",
+        "ID",
+        "int",
+        "void",
+        "break",
+        "if",
+        "endif",
+        "else",
+        "while",
+        "return",
+        "switch",
+        "case",
+        "default",
+        "==",
+        "output"
+    ],
+    "non_terminals": [
+        "$accept",
+        "program",
+        "declaration_list",
+        "declaration",
+        "var_declaration",
+        "type_specifier",
+        "fun_declaration",
+        "params",
+        "param_list",
+        "param",
+        "compound_stmt",
+        "local_declarations",
+        "statement_list",
+        "statement",
+        "expression_stmt",
+        "selection_stmt",
+        "iteration_stmt",
+        "return_stmt",
+        "switch_stmt",
+        "case_stmts",
+        "case_stmt",
+        "default_stmt",
+        "expression",
+        "var",
+        "simple_expression",
+        "relop",
+        "additive_expression",
+        "addop",
+        "term",
+        "mulop",
+        "factor",
+        "call",
+        "args",
+        "arg_list",
+        "output_stmt",
+        "ACTION_assign",
+        "ACTION_pid",
+        "ACTION_number",
+        "ACTION_save",
+        "ACTION_label",
+        "ACTION_savejump",
+        "ACTION_savecase",
+        "ACTION_jump",
+        "ACTION_loopwhile",
+        "ACTION_op",
+        "ACTION_sign",
+        "ACTION_jumpif",
+        "ACTION_array",
+        "ACTION_print",
+        "ACTION_break",
+        "ACTION_callbreak",
+        "ACTION_clearassign"
+    ],
+    "first": {
+        "$accept": [
+            "void",
+            "int"
+        ],
+        "program": [
+            "void",
+            "int"
+        ],
+        "declaration_list": [
+            "void",
+            "int"
+        ],
+        "declaration": [
+            "void",
+            "int"
+        ],
+        "var_declaration": [
+            "void",
+            "int"
+        ],
+        "type_specifier": [
+            "void",
+            "int"
+        ],
+        "fun_declaration": [
+            "void",
+            "int"
+        ],
+        "params": [
+            "void",
+            "int"
+        ],
+        "param_list": [
+            "void",
+            "int"
+        ],
+        "param": [
+            "void",
+            "int"
+        ],
+        "compound_stmt": [
+            "{"
+        ],
+        "local_declarations": [
+            "void",
+            "int"
+        ],
+        "statement_list": [
+            "if",
+            "while",
+            "ID",
+            "switch",
+            ";",
+            "{",
+            "(",
+            "return",
+            "break",
+            "NUM",
+            "output"
+        ],
+        "statement": [
+            "(",
+            "NUM",
+            "if",
+            "while",
+            "ID",
+            "switch",
+            ";",
+            "return",
+            "break",
+            "{",
+            "output"
+        ],
+        "expression_stmt": [
+            "NUM",
+            ";",
+            "ID",
+            "break",
+            "("
+        ],
+        "selection_stmt": [
+            "if"
+        ],
+        "iteration_stmt": [
+            "while"
+        ],
+        "return_stmt": [
+            "return"
+        ],
+        "switch_stmt": [
+            "switch"
+        ],
+        "case_stmts": [
+            "case"
+        ],
+        "case_stmt": [
+            "case"
+        ],
+        "default_stmt": [
+            "default"
+        ],
+        "expression": [
+            "NUM",
+            "ID",
+            "("
+        ],
+        "var": [
+            "ID"
+        ],
+        "simple_expression": [
+            "(",
+            "ID",
+            "NUM"
+        ],
+        "relop": [
+            "==",
+            "<"
+        ],
+        "additive_expression": [
+            "(",
+            "ID",
+            "NUM"
+        ],
+        "addop": [
+            "-",
+            "+"
+        ],
+        "term": [
+            "(",
+            "ID",
+            "NUM"
+        ],
+        "mulop": [
+            "*",
+            "/"
+        ],
+        "factor": [
+            "NUM",
+            "(",
+            "ID"
+        ],
+        "call": [
+            "ID"
+        ],
+        "args": [
+            "NUM",
+            "ID",
+            "("
+        ],
+        "arg_list": [
+            "NUM",
+            "ID",
+            "("
+        ],
+        "output_stmt": [
+            "output"
+        ],
+        "ACTION_assign": [],
+        "ACTION_pid": [],
+        "ACTION_number": [],
+        "ACTION_save": [],
+        "ACTION_label": [],
+        "ACTION_savejump": [],
+        "ACTION_savecase": [],
+        "ACTION_jump": [],
+        "ACTION_loopwhile": [],
+        "ACTION_op": [],
+        "ACTION_sign": [],
+        "ACTION_jumpif": [],
+        "ACTION_array": [],
+        "ACTION_print": [],
+        "ACTION_break": [],
+        "ACTION_callbreak": [],
+        "ACTION_clearassign": [],
+        "$": [
+            "$"
+        ],
+        "(": [
+            "("
+        ],
+        ")": [
+            ")"
+        ],
+        "*": [
+            "*"
+        ],
+        "+": [
+            "+"
+        ],
+        ",": [
+            ","
+        ],
+        "-": [
+            "-"
+        ],
+        "/": [
+            "/"
+        ],
+        ":": [
+            ":"
+        ],
+        ";": [
+            ";"
+        ],
+        "<": [
+            "<"
+        ],
+        "=": [
+            "="
+        ],
+        "[": [
+            "["
+        ],
+        "]": [
+            "]"
+        ],
+        "{": [
+            "{"
+        ],
+        "}": [
+            "}"
+        ],
+        "NUM": [
+            "NUM"
+        ],
+        "ID": [
+            "ID"
+        ],
+        "int": [
+            "int"
+        ],
+        "void": [
+            "void"
+        ],
+        "break": [
+            "break"
+        ],
+        "if": [
+            "if"
+        ],
+        "endif": [
+            "endif"
+        ],
+        "else": [
+            "else"
+        ],
+        "while": [
+            "while"
+        ],
+        "return": [
+            "return"
+        ],
+        "switch": [
+            "switch"
+        ],
+        "case": [
+            "case"
+        ],
+        "default": [
+            "default"
+        ],
+        "==": [
+            "=="
+        ],
+        "output": [
+            "output"
+        ]
+    },
+    "follow": {
+        "$accept": [],
+        "program": [
+            "$"
+        ],
+        "declaration_list": [
+            "int",
+            "$",
+            "void"
+        ],
+        "declaration": [
+            "int",
+            "$",
+            "void"
+        ],
+        "var_declaration": [
+            "if",
+            "while",
+            "ID",
+            "switch",
+            "}",
+            "int",
+            ";",
+            "$",
+            "{",
+            "(",
+            "void",
+            "return",
+            "break",
+            "NUM",
+            "output"
+        ],
+        "type_specifier": [
+            "ID"
+        ],
+        "fun_declaration": [
+            "int",
+            "$",
+            "void"
+        ],
+        "params": [
+            ")"
+        ],
+        "param_list": [
+            ",",
+            ")"
+        ],
+        "param": [
+            ",",
+            ")"
+        ],
+        "compound_stmt": [
+            "if",
+            "while",
+            "ID",
+            "switch",
+            "default",
+            "}",
+            "int",
+            ";",
+            "$",
+            "else",
+            "{",
+            "(",
+            "endif",
+            "void",
+            "case",
+            "return",
+            "break",
+            "NUM",
+            "output"
+        ],
+        "local_declarations": [
+            "if",
+            "while",
+            "ID",
+            "switch",
+            "}",
+            "int",
+            ";",
+            "{",
+            "(",
+            "void",
+            "return",
+            "break",
+            "NUM",
+            "output"
+        ],
+        "statement_list": [
+            "if",
+            "while",
+            "ID",
+            "switch",
+            "default",
+            "}",
+            ";",
+            "{",
+            "(",
+            "case",
+            "return",
+            "break",
+            "NUM",
+            "output"
+        ],
+        "statement": [
+            "if",
+            "while",
+            "ID",
+            "switch",
+            "default",
+            "}",
+            ";",
+            "else",
+            "{",
+            "(",
+            "endif",
+            "case",
+            "return",
+            "break",
+            "NUM",
+            "output"
+        ],
+        "expression_stmt": [
+            "if",
+            "while",
+            "ID",
+            "switch",
+            "default",
+            "}",
+            ";",
+            "else",
+            "{",
+            "(",
+            "endif",
+            "case",
+            "return",
+            "break",
+            "NUM",
+            "output"
+        ],
+        "selection_stmt": [
+            "if",
+            "while",
+            "ID",
+            "switch",
+            "default",
+            "}",
+            ";",
+            "else",
+            "{",
+            "(",
+            "endif",
+            "case",
+            "return",
+            "break",
+            "NUM",
+            "output"
+        ],
+        "iteration_stmt": [
+            "if",
+            "while",
+            "ID",
+            "switch",
+            "default",
+            "}",
+            ";",
+            "else",
+            "{",
+            "(",
+            "endif",
+            "case",
+            "return",
+            "break",
+            "NUM",
+            "output"
+        ],
+        "return_stmt": [
+            "if",
+            "while",
+            "ID",
+            "switch",
+            "default",
+            "}",
+            ";",
+            "else",
+            "{",
+            "(",
+            "endif",
+            "case",
+            "return",
+            "break",
+            "NUM",
+            "output"
+        ],
+        "switch_stmt": [
+            "if",
+            "while",
+            "ID",
+            "switch",
+            "default",
+            "}",
+            ";",
+            "else",
+            "{",
+            "(",
+            "endif",
+            "case",
+            "return",
+            "break",
+            "NUM",
+            "output"
+        ],
+        "case_stmts": [
+            "}",
+            "default",
+            "case"
+        ],
+        "case_stmt": [
+            "case",
+            "default",
+            "}"
+        ],
+        "default_stmt": [
+            "}"
+        ],
+        "expression": [
+            "]",
+            ";",
+            ")",
+            ","
+        ],
+        "var": [
+            "]",
+            "/",
+            ";",
+            ",",
+            "=",
+            "-",
+            "==",
+            ")",
+            "<",
+            "*",
+            "+"
+        ],
+        "simple_expression": [
+            "]",
+            ";",
+            ")",
+            ","
+        ],
+        "relop": [
+            "(",
+            "ID",
+            "NUM"
+        ],
+        "additive_expression": [
+            "]",
+            "-",
+            "+",
+            ";",
+            ")",
+            "<",
+            ",",
+            "=="
+        ],
+        "addop": [
+            "(",
+            "ID",
+            "NUM"
+        ],
+        "term": [
+            "]",
+            "/",
+            "-",
+            "+",
+            ";",
+            ")",
+            "<",
+            ",",
+            "*",
+            "=="
+        ],
+        "mulop": [
+            "(",
+            "ID",
+            "NUM"
+        ],
+        "factor": [
+            "]",
+            "/",
+            "+",
+            ";",
+            ",",
+            "-",
+            ")",
+            "<",
+            "*",
+            "=="
+        ],
+        "call": [
+            "]",
+            "/",
+            ";",
+            ",",
+            "-",
+            "==",
+            ")",
+            "<",
+            "*",
+            "+"
+        ],
+        "args": [
+            ")"
+        ],
+        "arg_list": [
+            ",",
+            ")"
+        ],
+        "output_stmt": [
+            "if",
+            "while",
+            "ID",
+            "switch",
+            "default",
+            "}",
+            ";",
+            "else",
+            "{",
+            "(",
+            "endif",
+            "case",
+            "return",
+            "break",
+            "NUM",
+            "output"
+        ],
+        "ACTION_assign": [
+            "]",
+            ";",
+            ")",
+            ","
+        ],
+        "ACTION_pid": [
+            "ID"
+        ],
+        "ACTION_number": [
+            "NUM"
+        ],
+        "ACTION_save": [
+            "if",
+            "while",
+            "ID",
+            "switch",
+            ";",
+            "{",
+            "(",
+            "return",
+            "break",
+            "NUM",
+            "output"
+        ],
+        "ACTION_label": [
+            "("
+        ],
+        "ACTION_savejump": [
+            "if",
+            "while",
+            "ID",
+            "switch",
+            ";",
+            "{",
+            "(",
+            "return",
+            "break",
+            "NUM",
+            "output"
+        ],
+        "ACTION_savecase": [
+            ":"
+        ],
+        "ACTION_jump": [
+            "endif"
+        ],
+        "ACTION_loopwhile": [
+            "if",
+            "while",
+            "ID",
+            "switch",
+            "default",
+            "}",
+            ";",
+            "else",
+            "{",
+            "(",
+            "endif",
+            "case",
+            "return",
+            "break",
+            "NUM",
+            "output"
+        ],
+        "ACTION_op": [
+            "]",
+            "/",
+            ";",
+            ",",
+            "-",
+            "==",
+            ")",
+            "<",
+            "*",
+            "+"
+        ],
+        "ACTION_sign": [
+            "/",
+            "<",
+            "-",
+            "*",
+            "==",
+            "+"
+        ],
+        "ACTION_jumpif": [
+            "if",
+            "while",
+            "ID",
+            "switch",
+            "default",
+            "}",
+            ";",
+            ":",
+            "else",
+            "{",
+            "(",
+            "endif",
+            "case",
+            "return",
+            "break",
+            "NUM",
+            "output"
+        ],
+        "ACTION_array": [
+            "]",
+            "/",
+            "+",
+            ";",
+            ",",
+            "=",
+            "-",
+            ")",
+            "<",
+            "*",
+            "=="
+        ],
+        "ACTION_print": [
+            ";"
+        ],
+        "ACTION_break": [
+            ";"
+        ],
+        "ACTION_callbreak": [
+            "if",
+            "while",
+            "ID",
+            "switch",
+            "default",
+            "}",
+            ";",
+            "else",
+            "{",
+            "(",
+            "endif",
+            "case",
+            "return",
+            "break",
+            "NUM",
+            "output"
+        ],
+        "ACTION_clearassign": [
+            "if",
+            "while",
+            "ID",
+            "switch",
+            "default",
+            "}",
+            ";",
+            "else",
+            "{",
+            "(",
+            "endif",
+            "case",
+            "return",
+            "break",
+            "NUM",
+            "output"
+        ]
+    },
+    "grammar": {
+        "0": [
+            "$accept",
+            "->",
+            "program",
+            "$"
+        ],
+        "1": [
+            "program",
+            "->",
+            "declaration_list"
+        ],
+        "2": [
+            "declaration_list",
+            "->",
+            "declaration_list",
+            "declaration"
+        ],
+        "3": [
+            "declaration_list",
+            "->",
+            "declaration"
+        ],
+        "4": [
+            "declaration",
+            "->",
+            "var_declaration"
+        ],
+        "5": [
+            "declaration",
+            "->",
+            "fun_declaration"
+        ],
+        "6": [
+            "var_declaration",
+            "->",
+            "type_specifier",
+            "ACTION_pid",
+            "ID",
+            ";"
+        ],
+        "7": [
+            "var_declaration",
+            "->",
+            "type_specifier",
+            "ACTION_pid",
+            "ID",
+            "[",
+            "ACTION_number",
+            "NUM",
+            "]",
+            "ACTION_array",
+            ";"
+        ],
+        "8": [
+            "type_specifier",
+            "->",
+            "int"
+        ],
+        "9": [
+            "type_specifier",
+            "->",
+            "void"
+        ],
+        "10": [
+            "fun_declaration",
+            "->",
+            "type_specifier",
+            "ACTION_pid",
+            "ID",
+            "(",
+            "params",
+            ")",
+            "compound_stmt"
+        ],
+        "11": [
+            "params",
+            "->",
+            "param_list"
+        ],
+        "12": [
+            "params",
+            "->",
+            "void"
+        ],
+        "13": [
+            "param_list",
+            "->",
+            "param_list",
+            ",",
+            "param"
+        ],
+        "14": [
+            "param_list",
+            "->",
+            "param"
+        ],
+        "15": [
+            "param",
+            "->",
+            "type_specifier",
+            "ACTION_pid",
+            "ID"
+        ],
+        "16": [
+            "param",
+            "->",
+            "type_specifier",
+            "ACTION_pid",
+            "ID",
+            "[",
+            "]"
+        ],
+        "17": [
+            "compound_stmt",
+            "->",
+            "{",
+            "local_declarations",
+            "statement_list",
+            "}"
+        ],
+        "18": [
+            "local_declarations",
+            "->",
+            "local_declarations",
+            "var_declaration"
+        ],
+        "19": [
+            "local_declarations",
+            "->",
+            "epsilon"
+        ],
+        "20": [
+            "statement_list",
+            "->",
+            "statement_list",
+            "statement"
+        ],
+        "21": [
+            "statement_list",
+            "->",
+            "epsilon"
+        ],
+        "22": [
+            "statement",
+            "->",
+            "expression_stmt"
+        ],
+        "23": [
+            "statement",
+            "->",
+            "compound_stmt"
+        ],
+        "24": [
+            "statement",
+            "->",
+            "selection_stmt"
+        ],
+        "25": [
+            "statement",
+            "->",
+            "iteration_stmt"
+        ],
+        "26": [
+            "statement",
+            "->",
+            "return_stmt"
+        ],
+        "27": [
+            "statement",
+            "->",
+            "switch_stmt"
+        ],
+        "28": [
+            "statement",
+            "->",
+            "output_stmt"
+        ],
+        "29": [
+            "expression_stmt",
+            "->",
+            "expression",
+            ";",
+            "ACTION_clearassign"
+        ],
+        "30": [
+            "expression_stmt",
+            "->",
+            "break",
+            "ACTION_break",
+            ";"
+        ],
+        "31": [
+            "expression_stmt",
+            "->",
+            ";"
+        ],
+        "32": [
+            "selection_stmt",
+            "->",
+            "if",
+            "(",
+            "expression",
+            ")",
+            "ACTION_save",
+            "statement",
+            "endif",
+            "ACTION_jumpif"
+        ],
+        "33": [
+            "selection_stmt",
+            "->",
+            "if",
+            "(",
+            "expression",
+            ")",
+            "ACTION_save",
+            "statement",
+            "else",
+            "ACTION_savejump",
+            "statement",
+            "ACTION_jump",
+            "endif"
+        ],
+        "34": [
+            "iteration_stmt",
+            "->",
+            "while",
+            "ACTION_label",
+            "(",
+            "expression",
+            ")",
+            "ACTION_save",
+            "statement",
+            "ACTION_loopwhile",
+            "ACTION_callbreak"
+        ],
+        "35": [
+            "return_stmt",
+            "->",
+            "return",
+            ";"
+        ],
+        "36": [
+            "return_stmt",
+            "->",
+            "return",
+            "expression",
+            ";"
+        ],
+        "37": [
+            "switch_stmt",
+            "->",
+            "switch",
+            "(",
+            "expression",
+            ")",
+            "{",
+            "case_stmts",
+            "default_stmt",
+            "}",
+            "ACTION_callbreak"
+        ],
+        "38": [
+            "case_stmts",
+            "->",
+            "case_stmts",
+            "case_stmt"
+        ],
+        "39": [
+            "case_stmts",
+            "->",
+            "epsilon"
+        ],
+        "40": [
+            "case_stmt",
+            "->",
+            "case",
+            "ACTION_jumpif",
+            "ACTION_number",
+            "NUM",
+            "ACTION_savecase",
+            ":",
+            "statement_list"
+        ],
+        "41": [
+            "default_stmt",
+            "->",
+            "default",
+            "ACTION_jumpif",
+            ":",
+            "statement_list"
+        ],
+        "42": [
+            "default_stmt",
+            "->",
+            "epsilon"
+        ],
+        "43": [
+            "expression",
+            "->",
+            "var",
+            "=",
+            "expression",
+            "ACTION_assign"
+        ],
+        "44": [
+            "expression",
+            "->",
+            "simple_expression"
+        ],
+        "45": [
+            "var",
+            "->",
+            "ACTION_pid",
+            "ID"
+        ],
+        "46": [
+            "var",
+            "->",
+            "ACTION_pid",
+            "ID",
+            "[",
+            "expression",
+            "]",
+            "ACTION_array"
+        ],
+        "47": [
+            "simple_expression",
+            "->",
+            "additive_expression",
+            "ACTION_sign",
+            "relop",
+            "additive_expression",
+            "ACTION_op"
+        ],
+        "48": [
+            "simple_expression",
+            "->",
+            "additive_expression"
+        ],
+        "49": [
+            "relop",
+            "->",
+            "<"
+        ],
+        "50": [
+            "relop",
+            "->",
+            "=="
+        ],
+        "51": [
+            "additive_expression",
+            "->",
+            "additive_expression",
+            "ACTION_sign",
+            "addop",
+            "term",
+            "ACTION_op"
+        ],
+        "52": [
+            "additive_expression",
+            "->",
+            "term"
+        ],
+        "53": [
+            "addop",
+            "->",
+            "+"
+        ],
+        "54": [
+            "addop",
+            "->",
+            "-"
+        ],
+        "55": [
+            "term",
+            "->",
+            "term",
+            "ACTION_sign",
+            "mulop",
+            "factor",
+            "ACTION_op"
+        ],
+        "56": [
+            "term",
+            "->",
+            "factor"
+        ],
+        "57": [
+            "mulop",
+            "->",
+            "*"
+        ],
+        "58": [
+            "mulop",
+            "->",
+            "/"
+        ],
+        "59": [
+            "factor",
+            "->",
+            "(",
+            "expression",
+            ")"
+        ],
+        "60": [
+            "factor",
+            "->",
+            "var"
+        ],
+        "61": [
+            "factor",
+            "->",
+            "call"
+        ],
+        "62": [
+            "factor",
+            "->",
+            "ACTION_number",
+            "NUM"
+        ],
+        "63": [
+            "call",
+            "->",
+            "ACTION_pid",
+            "ID",
+            "(",
+            "args",
+            ")"
+        ],
+        "64": [
+            "args",
+            "->",
+            "arg_list"
+        ],
+        "65": [
+            "args",
+            "->",
+            "epsilon"
+        ],
+        "66": [
+            "arg_list",
+            "->",
+            "arg_list",
+            ",",
+            "expression"
+        ],
+        "67": [
+            "arg_list",
+            "->",
+            "expression"
+        ],
+        "68": [
+            "output_stmt",
+            "->",
+            "output",
+            "(",
+            "expression",
+            ")",
+            "ACTION_print",
+            ";"
+        ],
+        "69": [
+            "ACTION_assign",
+            "->",
+            "epsilon"
+        ],
+        "70": [
+            "ACTION_pid",
+            "->",
+            "epsilon"
+        ],
+        "71": [
+            "ACTION_number",
+            "->",
+            "epsilon"
+        ],
+        "72": [
+            "ACTION_save",
+            "->",
+            "epsilon"
+        ],
+        "73": [
+            "ACTION_label",
+            "->",
+            "epsilon"
+        ],
+        "74": [
+            "ACTION_savejump",
+            "->",
+            "epsilon"
+        ],
+        "75": [
+            "ACTION_savecase",
+            "->",
+            "epsilon"
+        ],
+        "76": [
+            "ACTION_jump",
+            "->",
+            "epsilon"
+        ],
+        "77": [
+            "ACTION_loopwhile",
+            "->",
+            "epsilon"
+        ],
+        "78": [
+            "ACTION_op",
+            "->",
+            "epsilon"
+        ],
+        "79": [
+            "ACTION_sign",
+            "->",
+            "epsilon"
+        ],
+        "80": [
+            "ACTION_jumpif",
+            "->",
+            "epsilon"
+        ],
+        "81": [
+            "ACTION_array",
+            "->",
+            "epsilon"
+        ],
+        "82": [
+            "ACTION_print",
+            "->",
+            "epsilon"
+        ],
+        "83": [
+            "ACTION_break",
+            "->",
+            "epsilon"
+        ],
+        "84": [
+            "ACTION_callbreak",
+            "->",
+            "epsilon"
+        ],
+        "85": [
+            "ACTION_clearassign",
+            "->",
+            "epsilon"
+        ]
+    },
+    "parse_table": {
+        "0": {
+            "int": "shift_1",
+            "void": "shift_2",
+            "program": "goto_3",
+            "declaration_list": "goto_4",
+            "declaration": "goto_5",
+            "var_declaration": "goto_6",
+            "type_specifier": "goto_7",
+            "fun_declaration": "goto_8"
+        },
+        "1": {
+            "ID": "reduce_8"
+        },
+        "2": {
+            "ID": "reduce_9"
+        },
+        "3": {
+            "$": "shift_9"
+        },
+        "4": {
+            "int": "shift_1",
+            "void": "shift_2",
+            "declaration": "goto_10",
+            "var_declaration": "goto_6",
+            "type_specifier": "goto_7",
+            "fun_declaration": "goto_8",
+            "$": "reduce_1"
+        },
+        "5": {
+            "int": "reduce_3",
+            "$": "reduce_3",
+            "void": "reduce_3"
+        },
+        "6": {
+            "int": "reduce_4",
+            "$": "reduce_4",
+            "void": "reduce_4"
+        },
+        "7": {
+            "ACTION_pid": "goto_11",
+            "ID": "reduce_70"
+        },
+        "8": {
+            "int": "reduce_5",
+            "$": "reduce_5",
+            "void": "reduce_5"
+        },
+        "9": {
+            "$": "accept"
+        },
+        "10": {
+            "int": "reduce_2",
+            "$": "reduce_2",
+            "void": "reduce_2"
+        },
+        "11": {
+            "ID": "shift_12"
+        },
+        "12": {
+            ";": "shift_13",
+            "[": "shift_14",
+            "(": "shift_15"
+        },
+        "13": {
+            "if": "reduce_6",
+            "while": "reduce_6",
+            "ID": "reduce_6",
+            "switch": "reduce_6",
+            "}": "reduce_6",
+            "int": "reduce_6",
+            ";": "reduce_6",
+            "$": "reduce_6",
+            "{": "reduce_6",
+            "(": "reduce_6",
+            "void": "reduce_6",
+            "return": "reduce_6",
+            "break": "reduce_6",
+            "NUM": "reduce_6",
+            "output": "reduce_6"
+        },
+        "14": {
+            "ACTION_number": "goto_16",
+            "NUM": "reduce_71"
+        },
+        "15": {
+            "int": "shift_1",
+            "void": "shift_17",
+            "type_specifier": "goto_18",
+            "params": "goto_19",
+            "param_list": "goto_20",
+            "param": "goto_21"
+        },
+        "16": {
+            "NUM": "shift_22"
+        },
+        "17": {
+            ")": "reduce_12",
+            "ID": "reduce_9"
+        },
+        "18": {
+            "ACTION_pid": "goto_23",
+            "ID": "reduce_70"
+        },
+        "19": {
+            ")": "shift_24"
+        },
+        "20": {
+            ",": "shift_25",
+            ")": "reduce_11"
+        },
+        "21": {
+            ",": "reduce_14",
+            ")": "reduce_14"
+        },
+        "22": {
+            "]": "shift_26"
+        },
+        "23": {
+            "ID": "shift_27"
+        },
+        "24": {
+            "{": "shift_28",
+            "compound_stmt": "goto_29"
+        },
+        "25": {
+            "int": "shift_1",
+            "void": "shift_2",
+            "type_specifier": "goto_18",
+            "param": "goto_30"
+        },
+        "26": {
+            "ACTION_array": "goto_31",
+            "]": "reduce_81",
+            "/": "reduce_81",
+            "+": "reduce_81",
+            ";": "reduce_81",
+            ",": "reduce_81",
+            "=": "reduce_81",
+            "-": "reduce_81",
+            ")": "reduce_81",
+            "<": "reduce_81",
+            "*": "reduce_81",
+            "==": "reduce_81"
+        },
+        "27": {
+            "[": "shift_32",
+            ",": "reduce_15",
+            ")": "reduce_15"
+        },
+        "28": {
+            "local_declarations": "goto_33",
+            "if": "reduce_19",
+            "while": "reduce_19",
+            "ID": "reduce_19",
+            "switch": "reduce_19",
+            "}": "reduce_19",
+            "int": "reduce_19",
+            ";": "reduce_19",
+            "{": "reduce_19",
+            "(": "reduce_19",
+            "void": "reduce_19",
+            "return": "reduce_19",
+            "break": "reduce_19",
+            "NUM": "reduce_19",
+            "output": "reduce_19"
+        },
+        "29": {
+            "int": "reduce_10",
+            "$": "reduce_10",
+            "void": "reduce_10"
+        },
+        "30": {
+            ",": "reduce_13",
+            ")": "reduce_13"
+        },
+        "31": {
+            ";": "shift_34"
+        },
+        "32": {
+            "]": "shift_35"
+        },
+        "33": {
+            "int": "shift_1",
+            "void": "shift_2",
+            "var_declaration": "goto_36",
+            "type_specifier": "goto_37",
+            "statement_list": "goto_38",
+            "if": "reduce_21",
+            "while": "reduce_21",
+            "ID": "reduce_21",
+            "switch": "reduce_21",
+            "default": "reduce_21",
+            "}": "reduce_21",
+            ";": "reduce_21",
+            "{": "reduce_21",
+            "(": "reduce_21",
+            "case": "reduce_21",
+            "return": "reduce_21",
+            "break": "reduce_21",
+            "NUM": "reduce_21",
+            "output": "reduce_21"
+        },
+        "34": {
+            "if": "reduce_7",
+            "while": "reduce_7",
+            "ID": "reduce_7",
+            "switch": "reduce_7",
+            "}": "reduce_7",
+            "int": "reduce_7",
+            ";": "reduce_7",
+            "$": "reduce_7",
+            "{": "reduce_7",
+            "(": "reduce_7",
+            "void": "reduce_7",
+            "return": "reduce_7",
+            "break": "reduce_7",
+            "NUM": "reduce_7",
+            "output": "reduce_7"
+        },
+        "35": {
+            ",": "reduce_16",
+            ")": "reduce_16"
+        },
+        "36": {
+            "if": "reduce_18",
+            "while": "reduce_18",
+            "ID": "reduce_18",
+            "switch": "reduce_18",
+            "}": "reduce_18",
+            "int": "reduce_18",
+            ";": "reduce_18",
+            "{": "reduce_18",
+            "(": "reduce_18",
+            "void": "reduce_18",
+            "return": "reduce_18",
+            "break": "reduce_18",
+            "NUM": "reduce_18",
+            "output": "reduce_18"
+        },
+        "37": {
+            "ACTION_pid": "goto_39",
+            "ID": "reduce_70"
+        },
+        "38": {
+            ";": "shift_40",
+            "(": "shift_41",
+            "{": "shift_28",
+            "}": "shift_42",
+            "break": "shift_43",
+            "if": "shift_44",
+            "while": "shift_45",
+            "return": "shift_46",
+            "switch": "shift_47",
+            "output": "shift_48",
+            "compound_stmt": "goto_49",
+            "statement": "goto_50",
+            "expression_stmt": "goto_51",
+            "selection_stmt": "goto_52",
+            "iteration_stmt": "goto_53",
+            "return_stmt": "goto_54",
+            "switch_stmt": "goto_55",
+            "expression": "goto_56",
+            "var": "goto_57",
+            "simple_expression": "goto_58",
+            "additive_expression": "goto_59",
+            "term": "goto_60",
+            "factor": "goto_61",
+            "call": "goto_62",
+            "output_stmt": "goto_63",
+            "ACTION_pid": "goto_64",
+            "ACTION_number": "goto_65",
+            "NUM": "reduce_71",
+            "ID": "reduce_70"
+        },
+        "39": {
+            "ID": "shift_66"
+        },
+        "40": {
+            "if": "reduce_31",
+            "while": "reduce_31",
+            "ID": "reduce_31",
+            "switch": "reduce_31",
+            "default": "reduce_31",
+            "}": "reduce_31",
+            ";": "reduce_31",
+            "else": "reduce_31",
+            "{": "reduce_31",
+            "(": "reduce_31",
+            "endif": "reduce_31",
+            "case": "reduce_31",
+            "return": "reduce_31",
+            "break": "reduce_31",
+            "NUM": "reduce_31",
+            "output": "reduce_31"
+        },
+        "41": {
+            "(": "shift_41",
+            "expression": "goto_67",
+            "var": "goto_57",
+            "simple_expression": "goto_58",
+            "additive_expression": "goto_59",
+            "term": "goto_60",
+            "factor": "goto_61",
+            "call": "goto_62",
+            "ACTION_pid": "goto_64",
+            "ACTION_number": "goto_65",
+            "NUM": "reduce_71",
+            "ID": "reduce_70"
+        },
+        "42": {
+            "if": "reduce_17",
+            "while": "reduce_17",
+            "ID": "reduce_17",
+            "switch": "reduce_17",
+            "default": "reduce_17",
+            "}": "reduce_17",
+            "int": "reduce_17",
+            ";": "reduce_17",
+            "$": "reduce_17",
+            "else": "reduce_17",
+            "{": "reduce_17",
+            "(": "reduce_17",
+            "endif": "reduce_17",
+            "void": "reduce_17",
+            "case": "reduce_17",
+            "return": "reduce_17",
+            "break": "reduce_17",
+            "NUM": "reduce_17",
+            "output": "reduce_17"
+        },
+        "43": {
+            "ACTION_break": "goto_68",
+            ";": "reduce_83"
+        },
+        "44": {
+            "(": "shift_69"
+        },
+        "45": {
+            "ACTION_label": "goto_70",
+            "(": "reduce_73"
+        },
+        "46": {
+            ";": "shift_71",
+            "(": "shift_41",
+            "expression": "goto_72",
+            "var": "goto_57",
+            "simple_expression": "goto_58",
+            "additive_expression": "goto_59",
+            "term": "goto_60",
+            "factor": "goto_61",
+            "call": "goto_62",
+            "ACTION_pid": "goto_64",
+            "ACTION_number": "goto_65",
+            "NUM": "reduce_71",
+            "ID": "reduce_70"
+        },
+        "47": {
+            "(": "shift_73"
+        },
+        "48": {
+            "(": "shift_74"
+        },
+        "49": {
+            "if": "reduce_23",
+            "while": "reduce_23",
+            "ID": "reduce_23",
+            "switch": "reduce_23",
+            "default": "reduce_23",
+            "}": "reduce_23",
+            ";": "reduce_23",
+            "else": "reduce_23",
+            "{": "reduce_23",
+            "(": "reduce_23",
+            "endif": "reduce_23",
+            "case": "reduce_23",
+            "return": "reduce_23",
+            "break": "reduce_23",
+            "NUM": "reduce_23",
+            "output": "reduce_23"
+        },
+        "50": {
+            "if": "reduce_20",
+            "while": "reduce_20",
+            "ID": "reduce_20",
+            "switch": "reduce_20",
+            "default": "reduce_20",
+            "}": "reduce_20",
+            ";": "reduce_20",
+            "{": "reduce_20",
+            "(": "reduce_20",
+            "case": "reduce_20",
+            "return": "reduce_20",
+            "break": "reduce_20",
+            "NUM": "reduce_20",
+            "output": "reduce_20"
+        },
+        "51": {
+            "if": "reduce_22",
+            "while": "reduce_22",
+            "ID": "reduce_22",
+            "switch": "reduce_22",
+            "default": "reduce_22",
+            "}": "reduce_22",
+            ";": "reduce_22",
+            "else": "reduce_22",
+            "{": "reduce_22",
+            "(": "reduce_22",
+            "endif": "reduce_22",
+            "case": "reduce_22",
+            "return": "reduce_22",
+            "break": "reduce_22",
+            "NUM": "reduce_22",
+            "output": "reduce_22"
+        },
+        "52": {
+            "if": "reduce_24",
+            "while": "reduce_24",
+            "ID": "reduce_24",
+            "switch": "reduce_24",
+            "default": "reduce_24",
+            "}": "reduce_24",
+            ";": "reduce_24",
+            "else": "reduce_24",
+            "{": "reduce_24",
+            "(": "reduce_24",
+            "endif": "reduce_24",
+            "case": "reduce_24",
+            "return": "reduce_24",
+            "break": "reduce_24",
+            "NUM": "reduce_24",
+            "output": "reduce_24"
+        },
+        "53": {
+            "if": "reduce_25",
+            "while": "reduce_25",
+            "ID": "reduce_25",
+            "switch": "reduce_25",
+            "default": "reduce_25",
+            "}": "reduce_25",
+            ";": "reduce_25",
+            "else": "reduce_25",
+            "{": "reduce_25",
+            "(": "reduce_25",
+            "endif": "reduce_25",
+            "case": "reduce_25",
+            "return": "reduce_25",
+            "break": "reduce_25",
+            "NUM": "reduce_25",
+            "output": "reduce_25"
+        },
+        "54": {
+            "if": "reduce_26",
+            "while": "reduce_26",
+            "ID": "reduce_26",
+            "switch": "reduce_26",
+            "default": "reduce_26",
+            "}": "reduce_26",
+            ";": "reduce_26",
+            "else": "reduce_26",
+            "{": "reduce_26",
+            "(": "reduce_26",
+            "endif": "reduce_26",
+            "case": "reduce_26",
+            "return": "reduce_26",
+            "break": "reduce_26",
+            "NUM": "reduce_26",
+            "output": "reduce_26"
+        },
+        "55": {
+            "if": "reduce_27",
+            "while": "reduce_27",
+            "ID": "reduce_27",
+            "switch": "reduce_27",
+            "default": "reduce_27",
+            "}": "reduce_27",
+            ";": "reduce_27",
+            "else": "reduce_27",
+            "{": "reduce_27",
+            "(": "reduce_27",
+            "endif": "reduce_27",
+            "case": "reduce_27",
+            "return": "reduce_27",
+            "break": "reduce_27",
+            "NUM": "reduce_27",
+            "output": "reduce_27"
+        },
+        "56": {
+            ";": "shift_75"
+        },
+        "57": {
+            "=": "shift_76",
+            "]": "reduce_60",
+            "/": "reduce_60",
+            "+": "reduce_60",
+            ";": "reduce_60",
+            ",": "reduce_60",
+            "-": "reduce_60",
+            ")": "reduce_60",
+            "<": "reduce_60",
+            "*": "reduce_60",
+            "==": "reduce_60"
+        },
+        "58": {
+            "]": "reduce_44",
+            ";": "reduce_44",
+            ")": "reduce_44",
+            ",": "reduce_44"
+        },
+        "59": {
+            "ACTION_sign": "goto_77",
+            "/": "reduce_79",
+            "<": "reduce_79",
+            "-": "reduce_79",
+            "*": "reduce_79",
+            "==": "reduce_79",
+            "+": "reduce_79",
+            "]": "reduce_48",
+            ";": "reduce_48",
+            ")": "reduce_48",
+            ",": "reduce_48"
+        },
+        "60": {
+            "ACTION_sign": "goto_78",
+            "/": "reduce_79",
+            "<": "reduce_52",
+            "-": "reduce_52",
+            "*": "reduce_79",
+            "==": "reduce_52",
+            "+": "reduce_52",
+            "]": "reduce_52",
+            ";": "reduce_52",
+            ")": "reduce_52",
+            ",": "reduce_52"
+        },
+        "61": {
+            "]": "reduce_56",
+            "/": "reduce_56",
+            "-": "reduce_56",
+            "+": "reduce_56",
+            ";": "reduce_56",
+            ")": "reduce_56",
+            "<": "reduce_56",
+            ",": "reduce_56",
+            "*": "reduce_56",
+            "==": "reduce_56"
+        },
+        "62": {
+            "]": "reduce_61",
+            "/": "reduce_61",
+            "+": "reduce_61",
+            ";": "reduce_61",
+            ",": "reduce_61",
+            "-": "reduce_61",
+            ")": "reduce_61",
+            "<": "reduce_61",
+            "*": "reduce_61",
+            "==": "reduce_61"
+        },
+        "63": {
+            "if": "reduce_28",
+            "while": "reduce_28",
+            "ID": "reduce_28",
+            "switch": "reduce_28",
+            "default": "reduce_28",
+            "}": "reduce_28",
+            ";": "reduce_28",
+            "else": "reduce_28",
+            "{": "reduce_28",
+            "(": "reduce_28",
+            "endif": "reduce_28",
+            "case": "reduce_28",
+            "return": "reduce_28",
+            "break": "reduce_28",
+            "NUM": "reduce_28",
+            "output": "reduce_28"
+        },
+        "64": {
+            "ID": "shift_79"
+        },
+        "65": {
+            "NUM": "shift_80"
+        },
+        "66": {
+            ";": "shift_13",
+            "[": "shift_14"
+        },
+        "67": {
+            ")": "shift_81"
+        },
+        "68": {
+            ";": "shift_82"
+        },
+        "69": {
+            "(": "shift_41",
+            "expression": "goto_83",
+            "var": "goto_57",
+            "simple_expression": "goto_58",
+            "additive_expression": "goto_59",
+            "term": "goto_60",
+            "factor": "goto_61",
+            "call": "goto_62",
+            "ACTION_pid": "goto_64",
+            "ACTION_number": "goto_65",
+            "NUM": "reduce_71",
+            "ID": "reduce_70"
+        },
+        "70": {
+            "(": "shift_84"
+        },
+        "71": {
+            "if": "reduce_35",
+            "while": "reduce_35",
+            "ID": "reduce_35",
+            "switch": "reduce_35",
+            "default": "reduce_35",
+            "}": "reduce_35",
+            ";": "reduce_35",
+            "else": "reduce_35",
+            "{": "reduce_35",
+            "(": "reduce_35",
+            "endif": "reduce_35",
+            "case": "reduce_35",
+            "return": "reduce_35",
+            "break": "reduce_35",
+            "NUM": "reduce_35",
+            "output": "reduce_35"
+        },
+        "72": {
+            ";": "shift_85"
+        },
+        "73": {
+            "(": "shift_41",
+            "expression": "goto_86",
+            "var": "goto_57",
+            "simple_expression": "goto_58",
+            "additive_expression": "goto_59",
+            "term": "goto_60",
+            "factor": "goto_61",
+            "call": "goto_62",
+            "ACTION_pid": "goto_64",
+            "ACTION_number": "goto_65",
+            "NUM": "reduce_71",
+            "ID": "reduce_70"
+        },
+        "74": {
+            "(": "shift_41",
+            "expression": "goto_87",
+            "var": "goto_57",
+            "simple_expression": "goto_58",
+            "additive_expression": "goto_59",
+            "term": "goto_60",
+            "factor": "goto_61",
+            "call": "goto_62",
+            "ACTION_pid": "goto_64",
+            "ACTION_number": "goto_65",
+            "NUM": "reduce_71",
+            "ID": "reduce_70"
+        },
+        "75": {
+            "ACTION_clearassign": "goto_88",
+            "if": "reduce_85",
+            "while": "reduce_85",
+            "ID": "reduce_85",
+            "switch": "reduce_85",
+            "default": "reduce_85",
+            "}": "reduce_85",
+            ";": "reduce_85",
+            "else": "reduce_85",
+            "{": "reduce_85",
+            "(": "reduce_85",
+            "endif": "reduce_85",
+            "case": "reduce_85",
+            "return": "reduce_85",
+            "break": "reduce_85",
+            "NUM": "reduce_85",
+            "output": "reduce_85"
+        },
+        "76": {
+            "(": "shift_41",
+            "expression": "goto_89",
+            "var": "goto_57",
+            "simple_expression": "goto_58",
+            "additive_expression": "goto_59",
+            "term": "goto_60",
+            "factor": "goto_61",
+            "call": "goto_62",
+            "ACTION_pid": "goto_64",
+            "ACTION_number": "goto_65",
+            "NUM": "reduce_71",
+            "ID": "reduce_70"
+        },
+        "77": {
+            "<": "shift_90",
+            "==": "shift_91",
+            "+": "shift_92",
+            "-": "shift_93",
+            "relop": "goto_94",
+            "addop": "goto_95"
+        },
+        "78": {
+            "*": "shift_96",
+            "/": "shift_97",
+            "mulop": "goto_98"
+        },
+        "79": {
+            "[": "shift_99",
+            "(": "shift_100",
+            "]": "reduce_45",
+            "/": "reduce_45",
+            ";": "reduce_45",
+            ",": "reduce_45",
+            "=": "reduce_45",
+            "-": "reduce_45",
+            "==": "reduce_45",
+            ")": "reduce_45",
+            "<": "reduce_45",
+            "*": "reduce_45",
+            "+": "reduce_45"
+        },
+        "80": {
+            "]": "reduce_62",
+            "/": "reduce_62",
+            "+": "reduce_62",
+            ";": "reduce_62",
+            ",": "reduce_62",
+            "-": "reduce_62",
+            ")": "reduce_62",
+            "<": "reduce_62",
+            "*": "reduce_62",
+            "==": "reduce_62"
+        },
+        "81": {
+            "]": "reduce_59",
+            "/": "reduce_59",
+            "+": "reduce_59",
+            ";": "reduce_59",
+            ",": "reduce_59",
+            "-": "reduce_59",
+            ")": "reduce_59",
+            "<": "reduce_59",
+            "*": "reduce_59",
+            "==": "reduce_59"
+        },
+        "82": {
+            "if": "reduce_30",
+            "while": "reduce_30",
+            "ID": "reduce_30",
+            "switch": "reduce_30",
+            "default": "reduce_30",
+            "}": "reduce_30",
+            ";": "reduce_30",
+            "else": "reduce_30",
+            "{": "reduce_30",
+            "(": "reduce_30",
+            "endif": "reduce_30",
+            "case": "reduce_30",
+            "return": "reduce_30",
+            "break": "reduce_30",
+            "NUM": "reduce_30",
+            "output": "reduce_30"
+        },
+        "83": {
+            ")": "shift_101"
+        },
+        "84": {
+            "(": "shift_41",
+            "expression": "goto_102",
+            "var": "goto_57",
+            "simple_expression": "goto_58",
+            "additive_expression": "goto_59",
+            "term": "goto_60",
+            "factor": "goto_61",
+            "call": "goto_62",
+            "ACTION_pid": "goto_64",
+            "ACTION_number": "goto_65",
+            "NUM": "reduce_71",
+            "ID": "reduce_70"
+        },
+        "85": {
+            "if": "reduce_36",
+            "while": "reduce_36",
+            "ID": "reduce_36",
+            "switch": "reduce_36",
+            "default": "reduce_36",
+            "}": "reduce_36",
+            ";": "reduce_36",
+            "else": "reduce_36",
+            "{": "reduce_36",
+            "(": "reduce_36",
+            "endif": "reduce_36",
+            "case": "reduce_36",
+            "return": "reduce_36",
+            "break": "reduce_36",
+            "NUM": "reduce_36",
+            "output": "reduce_36"
+        },
+        "86": {
+            ")": "shift_103"
+        },
+        "87": {
+            ")": "shift_104"
+        },
+        "88": {
+            "if": "reduce_29",
+            "while": "reduce_29",
+            "ID": "reduce_29",
+            "switch": "reduce_29",
+            "default": "reduce_29",
+            "}": "reduce_29",
+            ";": "reduce_29",
+            "else": "reduce_29",
+            "{": "reduce_29",
+            "(": "reduce_29",
+            "endif": "reduce_29",
+            "case": "reduce_29",
+            "return": "reduce_29",
+            "break": "reduce_29",
+            "NUM": "reduce_29",
+            "output": "reduce_29"
+        },
+        "89": {
+            "ACTION_assign": "goto_105",
+            "]": "reduce_69",
+            ";": "reduce_69",
+            ")": "reduce_69",
+            ",": "reduce_69"
+        },
+        "90": {
+            "(": "reduce_49",
+            "ID": "reduce_49",
+            "NUM": "reduce_49"
+        },
+        "91": {
+            "(": "reduce_50",
+            "ID": "reduce_50",
+            "NUM": "reduce_50"
+        },
+        "92": {
+            "(": "reduce_53",
+            "ID": "reduce_53",
+            "NUM": "reduce_53"
+        },
+        "93": {
+            "(": "reduce_54",
+            "ID": "reduce_54",
+            "NUM": "reduce_54"
+        },
+        "94": {
+            "(": "shift_41",
+            "var": "goto_106",
+            "additive_expression": "goto_107",
+            "term": "goto_60",
+            "factor": "goto_61",
+            "call": "goto_62",
+            "ACTION_pid": "goto_64",
+            "ACTION_number": "goto_65",
+            "NUM": "reduce_71",
+            "ID": "reduce_70"
+        },
+        "95": {
+            "(": "shift_41",
+            "var": "goto_106",
+            "term": "goto_108",
+            "factor": "goto_61",
+            "call": "goto_62",
+            "ACTION_pid": "goto_64",
+            "ACTION_number": "goto_65",
+            "NUM": "reduce_71",
+            "ID": "reduce_70"
+        },
+        "96": {
+            "(": "reduce_57",
+            "ID": "reduce_57",
+            "NUM": "reduce_57"
+        },
+        "97": {
+            "(": "reduce_58",
+            "ID": "reduce_58",
+            "NUM": "reduce_58"
+        },
+        "98": {
+            "(": "shift_41",
+            "var": "goto_106",
+            "factor": "goto_109",
+            "call": "goto_62",
+            "ACTION_pid": "goto_64",
+            "ACTION_number": "goto_65",
+            "NUM": "reduce_71",
+            "ID": "reduce_70"
+        },
+        "99": {
+            "(": "shift_41",
+            "expression": "goto_110",
+            "var": "goto_57",
+            "simple_expression": "goto_58",
+            "additive_expression": "goto_59",
+            "term": "goto_60",
+            "factor": "goto_61",
+            "call": "goto_62",
+            "ACTION_pid": "goto_64",
+            "ACTION_number": "goto_65",
+            "NUM": "reduce_71",
+            "ID": "reduce_70"
+        },
+        "100": {
+            "(": "shift_41",
+            "expression": "goto_111",
+            "var": "goto_57",
+            "simple_expression": "goto_58",
+            "additive_expression": "goto_59",
+            "term": "goto_60",
+            "factor": "goto_61",
+            "call": "goto_62",
+            "args": "goto_112",
+            "arg_list": "goto_113",
+            "ACTION_pid": "goto_64",
+            "ACTION_number": "goto_65",
+            "NUM": "reduce_71",
+            "ID": "reduce_70",
+            ")": "reduce_65"
+        },
+        "101": {
+            "ACTION_save": "goto_114",
+            "if": "reduce_72",
+            "while": "reduce_72",
+            "ID": "reduce_72",
+            "switch": "reduce_72",
+            ";": "reduce_72",
+            "{": "reduce_72",
+            "(": "reduce_72",
+            "return": "reduce_72",
+            "break": "reduce_72",
+            "NUM": "reduce_72",
+            "output": "reduce_72"
+        },
+        "102": {
+            ")": "shift_115"
+        },
+        "103": {
+            "{": "shift_116"
+        },
+        "104": {
+            "ACTION_print": "goto_117",
+            ";": "reduce_82"
+        },
+        "105": {
+            "]": "reduce_43",
+            ";": "reduce_43",
+            ")": "reduce_43",
+            ",": "reduce_43"
+        },
+        "106": {
+            "]": "reduce_60",
+            "/": "reduce_60",
+            "+": "reduce_60",
+            ";": "reduce_60",
+            ",": "reduce_60",
+            "-": "reduce_60",
+            ")": "reduce_60",
+            "<": "reduce_60",
+            "*": "reduce_60",
+            "==": "reduce_60"
+        },
+        "107": {
+            "ACTION_op": "goto_118",
+            "ACTION_sign": "goto_119",
+            "/": "reduce_78",
+            "<": "reduce_78",
+            "-": "reduce_78",
+            "*": "reduce_78",
+            "==": "reduce_78",
+            "+": "reduce_78",
+            "]": "reduce_78",
+            ";": "reduce_78",
+            ",": "reduce_78",
+            ")": "reduce_78"
+        },
+        "108": {
+            "ACTION_op": "goto_120",
+            "ACTION_sign": "goto_78",
+            "/": "reduce_78",
+            "<": "reduce_78",
+            "-": "reduce_78",
+            "*": "reduce_78",
+            "==": "reduce_78",
+            "+": "reduce_78",
+            "]": "reduce_78",
+            ";": "reduce_78",
+            ",": "reduce_78",
+            ")": "reduce_78"
+        },
+        "109": {
+            "ACTION_op": "goto_121",
+            "]": "reduce_78",
+            "/": "reduce_78",
+            ";": "reduce_78",
+            ",": "reduce_78",
+            "-": "reduce_78",
+            "==": "reduce_78",
+            ")": "reduce_78",
+            "<": "reduce_78",
+            "*": "reduce_78",
+            "+": "reduce_78"
+        },
+        "110": {
+            "]": "shift_122"
+        },
+        "111": {
+            ",": "reduce_67",
+            ")": "reduce_67"
+        },
+        "112": {
+            ")": "shift_123"
+        },
+        "113": {
+            ",": "shift_124",
+            ")": "reduce_64"
+        },
+        "114": {
+            ";": "shift_40",
+            "(": "shift_41",
+            "{": "shift_28",
+            "break": "shift_43",
+            "if": "shift_44",
+            "while": "shift_45",
+            "return": "shift_46",
+            "switch": "shift_47",
+            "output": "shift_48",
+            "compound_stmt": "goto_49",
+            "statement": "goto_125",
+            "expression_stmt": "goto_51",
+            "selection_stmt": "goto_52",
+            "iteration_stmt": "goto_53",
+            "return_stmt": "goto_54",
+            "switch_stmt": "goto_55",
+            "expression": "goto_56",
+            "var": "goto_57",
+            "simple_expression": "goto_58",
+            "additive_expression": "goto_59",
+            "term": "goto_60",
+            "factor": "goto_61",
+            "call": "goto_62",
+            "output_stmt": "goto_63",
+            "ACTION_pid": "goto_64",
+            "ACTION_number": "goto_65",
+            "NUM": "reduce_71",
+            "ID": "reduce_70"
+        },
+        "115": {
+            "ACTION_save": "goto_126",
+            "if": "reduce_72",
+            "while": "reduce_72",
+            "ID": "reduce_72",
+            "switch": "reduce_72",
+            ";": "reduce_72",
+            "{": "reduce_72",
+            "(": "reduce_72",
+            "return": "reduce_72",
+            "break": "reduce_72",
+            "NUM": "reduce_72",
+            "output": "reduce_72"
+        },
+        "116": {
+            "case_stmts": "goto_127",
+            "}": "reduce_39",
+            "default": "reduce_39",
+            "case": "reduce_39"
+        },
+        "117": {
+            ";": "shift_128"
+        },
+        "118": {
+            "]": "reduce_47",
+            ";": "reduce_47",
+            ")": "reduce_47",
+            ",": "reduce_47"
+        },
+        "119": {
+            "+": "shift_92",
+            "-": "shift_93",
+            "addop": "goto_95"
+        },
+        "120": {
+            "]": "reduce_51",
+            "-": "reduce_51",
+            "+": "reduce_51",
+            ";": "reduce_51",
+            ")": "reduce_51",
+            "<": "reduce_51",
+            ",": "reduce_51",
+            "==": "reduce_51"
+        },
+        "121": {
+            "]": "reduce_55",
+            "/": "reduce_55",
+            "-": "reduce_55",
+            "+": "reduce_55",
+            ";": "reduce_55",
+            ")": "reduce_55",
+            "<": "reduce_55",
+            ",": "reduce_55",
+            "*": "reduce_55",
+            "==": "reduce_55"
+        },
+        "122": {
+            "ACTION_array": "goto_129",
+            "]": "reduce_81",
+            "/": "reduce_81",
+            "+": "reduce_81",
+            ";": "reduce_81",
+            ",": "reduce_81",
+            "=": "reduce_81",
+            "-": "reduce_81",
+            ")": "reduce_81",
+            "<": "reduce_81",
+            "*": "reduce_81",
+            "==": "reduce_81"
+        },
+        "123": {
+            "]": "reduce_63",
+            "/": "reduce_63",
+            ";": "reduce_63",
+            ",": "reduce_63",
+            "-": "reduce_63",
+            "==": "reduce_63",
+            ")": "reduce_63",
+            "<": "reduce_63",
+            "*": "reduce_63",
+            "+": "reduce_63"
+        },
+        "124": {
+            "(": "shift_41",
+            "expression": "goto_130",
+            "var": "goto_57",
+            "simple_expression": "goto_58",
+            "additive_expression": "goto_59",
+            "term": "goto_60",
+            "factor": "goto_61",
+            "call": "goto_62",
+            "ACTION_pid": "goto_64",
+            "ACTION_number": "goto_65",
+            "NUM": "reduce_71",
+            "ID": "reduce_70"
+        },
+        "125": {
+            "endif": "shift_131",
+            "else": "shift_132"
+        },
+        "126": {
+            ";": "shift_40",
+            "(": "shift_41",
+            "{": "shift_28",
+            "break": "shift_43",
+            "if": "shift_44",
+            "while": "shift_45",
+            "return": "shift_46",
+            "switch": "shift_47",
+            "output": "shift_48",
+            "compound_stmt": "goto_49",
+            "statement": "goto_133",
+            "expression_stmt": "goto_51",
+            "selection_stmt": "goto_52",
+            "iteration_stmt": "goto_53",
+            "return_stmt": "goto_54",
+            "switch_stmt": "goto_55",
+            "expression": "goto_56",
+            "var": "goto_57",
+            "simple_expression": "goto_58",
+            "additive_expression": "goto_59",
+            "term": "goto_60",
+            "factor": "goto_61",
+            "call": "goto_62",
+            "output_stmt": "goto_63",
+            "ACTION_pid": "goto_64",
+            "ACTION_number": "goto_65",
+            "NUM": "reduce_71",
+            "ID": "reduce_70"
+        },
+        "127": {
+            "case": "shift_134",
+            "default": "shift_135",
+            "case_stmt": "goto_136",
+            "default_stmt": "goto_137",
+            "}": "reduce_42"
+        },
+        "128": {
+            "if": "reduce_68",
+            "while": "reduce_68",
+            "ID": "reduce_68",
+            "switch": "reduce_68",
+            "default": "reduce_68",
+            "}": "reduce_68",
+            ";": "reduce_68",
+            "else": "reduce_68",
+            "{": "reduce_68",
+            "(": "reduce_68",
+            "endif": "reduce_68",
+            "case": "reduce_68",
+            "return": "reduce_68",
+            "break": "reduce_68",
+            "NUM": "reduce_68",
+            "output": "reduce_68"
+        },
+        "129": {
+            "]": "reduce_46",
+            "/": "reduce_46",
+            ";": "reduce_46",
+            ",": "reduce_46",
+            "=": "reduce_46",
+            "-": "reduce_46",
+            "==": "reduce_46",
+            ")": "reduce_46",
+            "<": "reduce_46",
+            "*": "reduce_46",
+            "+": "reduce_46"
+        },
+        "130": {
+            ",": "reduce_66",
+            ")": "reduce_66"
+        },
+        "131": {
+            "ACTION_jumpif": "goto_138",
+            "if": "reduce_80",
+            "while": "reduce_80",
+            "ID": "reduce_80",
+            "switch": "reduce_80",
+            "default": "reduce_80",
+            "}": "reduce_80",
+            ";": "reduce_80",
+            ":": "reduce_80",
+            "else": "reduce_80",
+            "{": "reduce_80",
+            "(": "reduce_80",
+            "endif": "reduce_80",
+            "case": "reduce_80",
+            "return": "reduce_80",
+            "break": "reduce_80",
+            "NUM": "reduce_80",
+            "output": "reduce_80"
+        },
+        "132": {
+            "ACTION_savejump": "goto_139",
+            "if": "reduce_74",
+            "while": "reduce_74",
+            "ID": "reduce_74",
+            "switch": "reduce_74",
+            ";": "reduce_74",
+            "{": "reduce_74",
+            "(": "reduce_74",
+            "return": "reduce_74",
+            "break": "reduce_74",
+            "NUM": "reduce_74",
+            "output": "reduce_74"
+        },
+        "133": {
+            "ACTION_loopwhile": "goto_140",
+            "if": "reduce_77",
+            "while": "reduce_77",
+            "ID": "reduce_77",
+            "switch": "reduce_77",
+            "default": "reduce_77",
+            "}": "reduce_77",
+            ";": "reduce_77",
+            "else": "reduce_77",
+            "{": "reduce_77",
+            "(": "reduce_77",
+            "endif": "reduce_77",
+            "case": "reduce_77",
+            "return": "reduce_77",
+            "break": "reduce_77",
+            "NUM": "reduce_77",
+            "output": "reduce_77"
+        },
+        "134": {
+            "ACTION_jumpif": "goto_141",
+            "if": "reduce_80",
+            "while": "reduce_80",
+            "ID": "reduce_80",
+            "switch": "reduce_80",
+            "default": "reduce_80",
+            "}": "reduce_80",
+            ";": "reduce_80",
+            ":": "reduce_80",
+            "else": "reduce_80",
+            "{": "reduce_80",
+            "(": "reduce_80",
+            "endif": "reduce_80",
+            "case": "reduce_80",
+            "return": "reduce_80",
+            "break": "reduce_80",
+            "NUM": "reduce_80",
+            "output": "reduce_80"
+        },
+        "135": {
+            "ACTION_jumpif": "goto_142",
+            "if": "reduce_80",
+            "while": "reduce_80",
+            "ID": "reduce_80",
+            "switch": "reduce_80",
+            "default": "reduce_80",
+            "}": "reduce_80",
+            ";": "reduce_80",
+            ":": "reduce_80",
+            "else": "reduce_80",
+            "{": "reduce_80",
+            "(": "reduce_80",
+            "endif": "reduce_80",
+            "case": "reduce_80",
+            "return": "reduce_80",
+            "break": "reduce_80",
+            "NUM": "reduce_80",
+            "output": "reduce_80"
+        },
+        "136": {
+            "}": "reduce_38",
+            "default": "reduce_38",
+            "case": "reduce_38"
+        },
+        "137": {
+            "}": "shift_143"
+        },
+        "138": {
+            "if": "reduce_32",
+            "while": "reduce_32",
+            "ID": "reduce_32",
+            "switch": "reduce_32",
+            "default": "reduce_32",
+            "}": "reduce_32",
+            ";": "reduce_32",
+            "else": "reduce_32",
+            "{": "reduce_32",
+            "(": "reduce_32",
+            "endif": "reduce_32",
+            "case": "reduce_32",
+            "return": "reduce_32",
+            "break": "reduce_32",
+            "NUM": "reduce_32",
+            "output": "reduce_32"
+        },
+        "139": {
+            ";": "shift_40",
+            "(": "shift_41",
+            "{": "shift_28",
+            "break": "shift_43",
+            "if": "shift_44",
+            "while": "shift_45",
+            "return": "shift_46",
+            "switch": "shift_47",
+            "output": "shift_48",
+            "compound_stmt": "goto_49",
+            "statement": "goto_144",
+            "expression_stmt": "goto_51",
+            "selection_stmt": "goto_52",
+            "iteration_stmt": "goto_53",
+            "return_stmt": "goto_54",
+            "switch_stmt": "goto_55",
+            "expression": "goto_56",
+            "var": "goto_57",
+            "simple_expression": "goto_58",
+            "additive_expression": "goto_59",
+            "term": "goto_60",
+            "factor": "goto_61",
+            "call": "goto_62",
+            "output_stmt": "goto_63",
+            "ACTION_pid": "goto_64",
+            "ACTION_number": "goto_65",
+            "NUM": "reduce_71",
+            "ID": "reduce_70"
+        },
+        "140": {
+            "ACTION_callbreak": "goto_145",
+            "if": "reduce_84",
+            "while": "reduce_84",
+            "ID": "reduce_84",
+            "switch": "reduce_84",
+            "default": "reduce_84",
+            "}": "reduce_84",
+            ";": "reduce_84",
+            "else": "reduce_84",
+            "{": "reduce_84",
+            "(": "reduce_84",
+            "endif": "reduce_84",
+            "case": "reduce_84",
+            "return": "reduce_84",
+            "break": "reduce_84",
+            "NUM": "reduce_84",
+            "output": "reduce_84"
+        },
+        "141": {
+            "ACTION_number": "goto_146",
+            "NUM": "reduce_71"
+        },
+        "142": {
+            ":": "shift_147"
+        },
+        "143": {
+            "ACTION_callbreak": "goto_148",
+            "if": "reduce_84",
+            "while": "reduce_84",
+            "ID": "reduce_84",
+            "switch": "reduce_84",
+            "default": "reduce_84",
+            "}": "reduce_84",
+            ";": "reduce_84",
+            "else": "reduce_84",
+            "{": "reduce_84",
+            "(": "reduce_84",
+            "endif": "reduce_84",
+            "case": "reduce_84",
+            "return": "reduce_84",
+            "break": "reduce_84",
+            "NUM": "reduce_84",
+            "output": "reduce_84"
+        },
+        "144": {
+            "ACTION_jump": "goto_149",
+            "endif": "reduce_76"
+        },
+        "145": {
+            "if": "reduce_34",
+            "while": "reduce_34",
+            "ID": "reduce_34",
+            "switch": "reduce_34",
+            "default": "reduce_34",
+            "}": "reduce_34",
+            ";": "reduce_34",
+            "else": "reduce_34",
+            "{": "reduce_34",
+            "(": "reduce_34",
+            "endif": "reduce_34",
+            "case": "reduce_34",
+            "return": "reduce_34",
+            "break": "reduce_34",
+            "NUM": "reduce_34",
+            "output": "reduce_34"
+        },
+        "146": {
+            "NUM": "shift_150"
+        },
+        "147": {
+            "statement_list": "goto_151",
+            "if": "reduce_21",
+            "while": "reduce_21",
+            "ID": "reduce_21",
+            "switch": "reduce_21",
+            "default": "reduce_21",
+            "}": "reduce_21",
+            ";": "reduce_21",
+            "{": "reduce_21",
+            "(": "reduce_21",
+            "case": "reduce_21",
+            "return": "reduce_21",
+            "break": "reduce_21",
+            "NUM": "reduce_21",
+            "output": "reduce_21"
+        },
+        "148": {
+            "if": "reduce_37",
+            "while": "reduce_37",
+            "ID": "reduce_37",
+            "switch": "reduce_37",
+            "default": "reduce_37",
+            "}": "reduce_37",
+            ";": "reduce_37",
+            "else": "reduce_37",
+            "{": "reduce_37",
+            "(": "reduce_37",
+            "endif": "reduce_37",
+            "case": "reduce_37",
+            "return": "reduce_37",
+            "break": "reduce_37",
+            "NUM": "reduce_37",
+            "output": "reduce_37"
+        },
+        "149": {
+            "endif": "shift_152"
+        },
+        "150": {
+            "ACTION_savecase": "goto_153",
+            ":": "reduce_75"
+        },
+        "151": {
+            ";": "shift_40",
+            "(": "shift_41",
+            "{": "shift_28",
+            "break": "shift_43",
+            "if": "shift_44",
+            "while": "shift_45",
+            "return": "shift_46",
+            "switch": "shift_47",
+            "output": "shift_48",
+            "compound_stmt": "goto_49",
+            "statement": "goto_50",
+            "expression_stmt": "goto_51",
+            "selection_stmt": "goto_52",
+            "iteration_stmt": "goto_53",
+            "return_stmt": "goto_54",
+            "switch_stmt": "goto_55",
+            "expression": "goto_56",
+            "var": "goto_57",
+            "simple_expression": "goto_58",
+            "additive_expression": "goto_59",
+            "term": "goto_60",
+            "factor": "goto_61",
+            "call": "goto_62",
+            "output_stmt": "goto_63",
+            "ACTION_pid": "goto_64",
+            "ACTION_number": "goto_65",
+            "NUM": "reduce_71",
+            "ID": "reduce_70",
+            "}": "reduce_41"
+        },
+        "152": {
+            "if": "reduce_33",
+            "while": "reduce_33",
+            "ID": "reduce_33",
+            "switch": "reduce_33",
+            "default": "reduce_33",
+            "}": "reduce_33",
+            ";": "reduce_33",
+            "else": "reduce_33",
+            "{": "reduce_33",
+            "(": "reduce_33",
+            "endif": "reduce_33",
+            "case": "reduce_33",
+            "return": "reduce_33",
+            "break": "reduce_33",
+            "NUM": "reduce_33",
+            "output": "reduce_33"
+        },
+        "153": {
+            ":": "shift_154"
+        },
+        "154": {
+            "statement_list": "goto_155",
+            "if": "reduce_21",
+            "while": "reduce_21",
+            "ID": "reduce_21",
+            "switch": "reduce_21",
+            "default": "reduce_21",
+            "}": "reduce_21",
+            ";": "reduce_21",
+            "{": "reduce_21",
+            "(": "reduce_21",
+            "case": "reduce_21",
+            "return": "reduce_21",
+            "break": "reduce_21",
+            "NUM": "reduce_21",
+            "output": "reduce_21"
+        },
+        "155": {
+            ";": "shift_40",
+            "(": "shift_41",
+            "{": "shift_28",
+            "break": "shift_43",
+            "if": "shift_44",
+            "while": "shift_45",
+            "return": "shift_46",
+            "switch": "shift_47",
+            "output": "shift_48",
+            "compound_stmt": "goto_49",
+            "statement": "goto_50",
+            "expression_stmt": "goto_51",
+            "selection_stmt": "goto_52",
+            "iteration_stmt": "goto_53",
+            "return_stmt": "goto_54",
+            "switch_stmt": "goto_55",
+            "expression": "goto_56",
+            "var": "goto_57",
+            "simple_expression": "goto_58",
+            "additive_expression": "goto_59",
+            "term": "goto_60",
+            "factor": "goto_61",
+            "call": "goto_62",
+            "output_stmt": "goto_63",
+            "ACTION_pid": "goto_64",
+            "ACTION_number": "goto_65",
+            "NUM": "reduce_71",
+            "ID": "reduce_70",
+            "case": "reduce_40",
+            "default": "reduce_40",
+            "}": "reduce_40"
+        }
+    }
+}
