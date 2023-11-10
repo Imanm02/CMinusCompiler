@@ -46,6 +46,7 @@ The `Code` folder contains several components of the CMinusCompiler:
 - `syntax_errors.txt`: A log file where syntax errors detected during the compilation are recorded.
 - `table.json`: A JSON representation of the parse table used by the parser to guide the parsing process.
 
+The `Docs` folder contains docs of the CMinusCompiler project and also the `grammar.txt` file is in the `Phase 2` folder.
 
 ## Maintainer
 
