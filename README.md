@@ -18,3 +18,4 @@ WHITESPACE | blank (ASCII 32), \n (ASCII 10), \r (ASCII 13), \t (ASCII 9), \v (A
 ## Maintainer
 
 - [Iman Mohammadi](https://github.com/Imanm02)
+- [Shayan Salehi](https://github.com/ShayanSalehi81)
