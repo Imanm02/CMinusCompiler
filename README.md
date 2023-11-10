@@ -1,6 +1,6 @@
 # CMinusCompiler
 
-**Python3 based one-pass compiler for a very simplified C-minus**
+**Python3 based one-pass compiler for a simplified C-minus**
 
 ## Token Types and Grammar
 
