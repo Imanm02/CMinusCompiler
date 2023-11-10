@@ -6,6 +6,8 @@
 
 In this project, we aim to create a one-pass compiler for a subset of the C programming language, referred to as C-minus. It is written in Python 3 and is designed to be lightweight and straightforward. The compiler takes C-minus source code and compiles it into an intermediate representation that can be executed or further processed.
 
+## Features
+
 ## Token Types and Grammar
 
 The tokens in the below table can be recognized by the compiler:
