@@ -48,7 +48,7 @@ The `Code` folder contains several components of the CMinusCompiler:
 
 The `Docs` folder contains docs of the CMinusCompiler project and also the `grammar.txt` file is in the `Phase 2` folder.
 
-For testing each phase of the project, we use the testcases in the `Tests` folder.
+For verification and quality assurance, the project employs a suite of test cases located in the `Tests` folder. These cases are designed to systematically evaluate each phase of the compiler's functionality, ensuring robustness and reliability.
 
 In the third phase of the project, an interpreter housed in the `Interpreter folder` is utilized. This interpreter is integral to the project as it enables the execution of the compiled code, allowing for the demonstration and testing of the compiler's output in a controlled environment. The presence of the interpreter underscores the project's commitment to delivering a comprehensive toolset for both compilation and execution.
 
