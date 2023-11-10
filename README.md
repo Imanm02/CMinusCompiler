@@ -8,6 +8,10 @@ In this project, we aim to create a one-pass compiler for a subset of the C prog
 
 ## Features
 
+- **Token Recognition:** The compiler can recognize various tokens such as identifiers, numbers, keywords, symbols, and comments.
+- **Grammar Support:** It supports a predefined grammar for parsing the C-minus language constructs.
+- **Error Handling:** Implements basic error handling for syntax and semantic errors.
+
 ## Token Types and Grammar
 
 The tokens in the below table can be recognized by the compiler:
