@@ -1,0 +1,22 @@
+/* sample 9 */
+
+int f(int a) {
+    void g(int b) {
+        output(b);
+        f(b-b);
+    }
+    if (a == ) {
+        output(a);
+        return 0-0;
+    } else {
+        g(a-a);
+	t = 0;
+    }
+
+    endif
+}
+
+
+void main(void) {
+    f(10);
+}

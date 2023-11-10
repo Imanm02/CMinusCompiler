@@ -1,0 +1,19 @@
+/* sample 2 */
+
+int global1;
+int global2;
+
+int a(int a, int b, int c[]){
+   global1 = 0;
+   while(a<b){
+     global2 = global1 + c[a+b-1];
+     a = a - b;
+   }
+   c[0] = global2;
+   return c[0];
+}
+void main(void){
+	int array[50];
+	array[10] = a(0, 50, array);
+	return;
+}

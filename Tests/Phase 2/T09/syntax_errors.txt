@@ -1,0 +1,32 @@
+#4 : syntax error , illegal (
+syntax error , discarded (ID, g) from stack
+syntax error , discarded type_specifier from stack
+#4 : syntax error , missing var_declaration
+#4 : syntax error , illegal )
+syntax error , discarded (ID, b) from stack
+syntax error , discarded type_specifier from stack
+#4 : syntax error , missing statement_list
+#8 : syntax error , illegal )
+syntax error , discarded (SYMBOL, ==) from stack
+#8 : syntax error , discarded { from input
+#9 : syntax error , missing addop
+#9 : syntax error , illegal ;
+syntax error , discarded expression from stack
+#10 : syntax error , discarded return from input
+#10 : syntax error , discarded 0 from input
+#10 : syntax error , missing additive_expression
+#10 : syntax error , illegal ;
+syntax error , discarded expression from stack
+#11 : syntax error , discarded } from input
+#11 : syntax error , discarded else from input
+#11 : syntax error , discarded { from input
+#12 : syntax error , discarded g from input
+#12 : syntax error , discarded ( from input
+#12 : syntax error , discarded a from input
+#12 : syntax error , missing additive_expression
+#13 : syntax error , illegal t
+syntax error , discarded statement from stack
+#13 : syntax error , missing var
+#14 : syntax error , illegal }
+syntax error , discarded statement from stack
+#16 : syntax error , missing compound_stmt

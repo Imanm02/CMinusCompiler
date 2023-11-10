@@ -1,0 +1,8 @@
+#4 : syntax error , illegal (
+syntax error , discarded (ID, g) from stack
+syntax error , discarded type_specifier from stack
+#4 : syntax error , missing var_declaration
+#4 : syntax error , illegal )
+syntax error , discarded (ID, b) from stack
+syntax error , discarded type_specifier from stack
+#4 : syntax error , missing statement_list

@@ -1,0 +1,448 @@
+program
+├── declaration_list
+│   ├── declaration_list
+│   │   ├── declaration_list
+│   │   │   ├── declaration_list
+│   │   │   │   └── declaration
+│   │   │   │       └── var_declaration
+│   │   │   │           ├── type_specifier
+│   │   │   │           │   └── (KEYWORD, int)
+│   │   │   │           ├── (ID, global1)
+│   │   │   │           └── (SYMBOL, ;)
+│   │   │   └── declaration
+│   │   │       └── var_declaration
+│   │   │           ├── type_specifier
+│   │   │           │   └── (KEYWORD, int)
+│   │   │           ├── (ID, global2)
+│   │   │           └── (SYMBOL, ;)
+│   │   └── declaration
+│   │       └── fun_declaration
+│   │           ├── type_specifier
+│   │           │   └── (KEYWORD, int)
+│   │           ├── (ID, a)
+│   │           ├── (SYMBOL, ()
+│   │           ├── params
+│   │           │   └── param_list
+│   │           │       ├── param_list
+│   │           │       │   ├── param_list
+│   │           │       │   │   └── param
+│   │           │       │   │       ├── type_specifier
+│   │           │       │   │       │   └── (KEYWORD, int)
+│   │           │       │   │       └── (ID, a)
+│   │           │       │   ├── (SYMBOL, ,)
+│   │           │       │   └── param
+│   │           │       │       ├── type_specifier
+│   │           │       │       │   └── (KEYWORD, int)
+│   │           │       │       └── (ID, b)
+│   │           │       ├── (SYMBOL, ,)
+│   │           │       └── param
+│   │           │           ├── type_specifier
+│   │           │           │   └── (KEYWORD, int)
+│   │           │           ├── (ID, c)
+│   │           │           ├── (SYMBOL, [)
+│   │           │           └── (SYMBOL, ])
+│   │           ├── (SYMBOL, ))
+│   │           └── compound_stmt
+│   │               ├── (SYMBOL, {)
+│   │               ├── local_declarations
+│   │               │   └── epsilon
+│   │               ├── statement_list
+│   │               │   ├── statement_list
+│   │               │   │   ├── statement_list
+│   │               │   │   │   ├── statement_list
+│   │               │   │   │   │   ├── statement_list
+│   │               │   │   │   │   │   └── epsilon
+│   │               │   │   │   │   └── statement
+│   │               │   │   │   │       └── expression_stmt
+│   │               │   │   │   │           ├── expression
+│   │               │   │   │   │           │   ├── var
+│   │               │   │   │   │           │   │   └── (ID, global1)
+│   │               │   │   │   │           │   ├── (SYMBOL, =)
+│   │               │   │   │   │           │   └── expression
+│   │               │   │   │   │           │       └── simple_expression
+│   │               │   │   │   │           │           └── additive_expression
+│   │               │   │   │   │           │               └── term
+│   │               │   │   │   │           │                   └── factor
+│   │               │   │   │   │           │                       └── (NUM, 0)
+│   │               │   │   │   │           └── (SYMBOL, ;)
+│   │               │   │   │   └── statement
+│   │               │   │   │       └── iteration_stmt
+│   │               │   │   │           ├── (KEYWORD, while)
+│   │               │   │   │           ├── (SYMBOL, ()
+│   │               │   │   │           ├── expression
+│   │               │   │   │           │   └── simple_expression
+│   │               │   │   │           │       ├── additive_expression
+│   │               │   │   │           │       │   └── term
+│   │               │   │   │           │       │       └── factor
+│   │               │   │   │           │       │           └── var
+│   │               │   │   │           │       │               └── (ID, a)
+│   │               │   │   │           │       ├── relop
+│   │               │   │   │           │       │   └── (SYMBOL, <)
+│   │               │   │   │           │       └── additive_expression
+│   │               │   │   │           │           └── term
+│   │               │   │   │           │               └── factor
+│   │               │   │   │           │                   └── var
+│   │               │   │   │           │                       └── (ID, b)
+│   │               │   │   │           ├── (SYMBOL, ))
+│   │               │   │   │           └── statement
+│   │               │   │   │               └── compound_stmt
+│   │               │   │   │                   ├── (SYMBOL, {)
+│   │               │   │   │                   ├── local_declarations
+│   │               │   │   │                   │   └── epsilon
+│   │               │   │   │                   ├── statement_list
+│   │               │   │   │                   │   ├── statement_list
+│   │               │   │   │                   │   │   ├── statement_list
+│   │               │   │   │                   │   │   │   ├── statement_list
+│   │               │   │   │                   │   │   │   │   ├── statement_list
+│   │               │   │   │                   │   │   │   │   │   └── epsilon
+│   │               │   │   │                   │   │   │   │   └── statement
+│   │               │   │   │                   │   │   │   │       └── expression_stmt
+│   │               │   │   │                   │   │   │   │           ├── expression
+│   │               │   │   │                   │   │   │   │           │   ├── var
+│   │               │   │   │                   │   │   │   │           │   │   └── (ID, global2)
+│   │               │   │   │                   │   │   │   │           │   ├── (SYMBOL, =)
+│   │               │   │   │                   │   │   │   │           │   └── expression
+│   │               │   │   │                   │   │   │   │           │       └── simple_expression
+│   │               │   │   │                   │   │   │   │           │           └── additive_expression
+│   │               │   │   │                   │   │   │   │           │               ├── additive_expression
+│   │               │   │   │                   │   │   │   │           │               │   └── term
+│   │               │   │   │                   │   │   │   │           │               │       └── factor
+│   │               │   │   │                   │   │   │   │           │               │           └── var
+│   │               │   │   │                   │   │   │   │           │               │               └── (ID, global1)
+│   │               │   │   │                   │   │   │   │           │               ├── addop
+│   │               │   │   │                   │   │   │   │           │               │   └── (SYMBOL, +)
+│   │               │   │   │                   │   │   │   │           │               └── term
+│   │               │   │   │                   │   │   │   │           │                   └── factor
+│   │               │   │   │                   │   │   │   │           │                       └── var
+│   │               │   │   │                   │   │   │   │           │                           ├── (ID, c)
+│   │               │   │   │                   │   │   │   │           │                           ├── (SYMBOL, [)
+│   │               │   │   │                   │   │   │   │           │                           ├── expression
+│   │               │   │   │                   │   │   │   │           │                           │   └── simple_expression
+│   │               │   │   │                   │   │   │   │           │                           │       └── additive_expression
+│   │               │   │   │                   │   │   │   │           │                           │           ├── additive_expression
+│   │               │   │   │                   │   │   │   │           │                           │           │   ├── additive_expression
+│   │               │   │   │                   │   │   │   │           │                           │           │   │   └── term
+│   │               │   │   │                   │   │   │   │           │                           │           │   │       └── factor
+│   │               │   │   │                   │   │   │   │           │                           │           │   │           └── var
+│   │               │   │   │                   │   │   │   │           │                           │           │   │               └── (ID, a)
+│   │               │   │   │                   │   │   │   │           │                           │           │   ├── addop
+│   │               │   │   │                   │   │   │   │           │                           │           │   │   └── (SYMBOL, +)
+│   │               │   │   │                   │   │   │   │           │                           │           │   └── term
+│   │               │   │   │                   │   │   │   │           │                           │           │       └── factor
+│   │               │   │   │                   │   │   │   │           │                           │           │           └── var
+│   │               │   │   │                   │   │   │   │           │                           │           │               └── (ID, b)
+│   │               │   │   │                   │   │   │   │           │                           │           ├── addop
+│   │               │   │   │                   │   │   │   │           │                           │           │   └── (SYMBOL, -)
+│   │               │   │   │                   │   │   │   │           │                           │           └── term
+│   │               │   │   │                   │   │   │   │           │                           │               └── factor
+│   │               │   │   │                   │   │   │   │           │                           │                   └── (NUM, 1)
+│   │               │   │   │                   │   │   │   │           │                           └── (SYMBOL, ])
+│   │               │   │   │                   │   │   │   │           └── (SYMBOL, ;)
+│   │               │   │   │                   │   │   │   └── statement
+│   │               │   │   │                   │   │   │       └── expression_stmt
+│   │               │   │   │                   │   │   │           ├── expression
+│   │               │   │   │                   │   │   │           │   ├── var
+│   │               │   │   │                   │   │   │           │   │   └── (ID, a)
+│   │               │   │   │                   │   │   │           │   ├── (SYMBOL, =)
+│   │               │   │   │                   │   │   │           │   └── expression
+│   │               │   │   │                   │   │   │           │       └── simple_expression
+│   │               │   │   │                   │   │   │           │           └── additive_expression
+│   │               │   │   │                   │   │   │           │               ├── additive_expression
+│   │               │   │   │                   │   │   │           │               │   └── term
+│   │               │   │   │                   │   │   │           │               │       └── factor
+│   │               │   │   │                   │   │   │           │               │           └── var
+│   │               │   │   │                   │   │   │           │               │               └── (ID, a)
+│   │               │   │   │                   │   │   │           │               ├── addop
+│   │               │   │   │                   │   │   │           │               │   └── (SYMBOL, -)
+│   │               │   │   │                   │   │   │           │               └── term
+│   │               │   │   │                   │   │   │           │                   └── factor
+│   │               │   │   │                   │   │   │           │                       └── var
+│   │               │   │   │                   │   │   │           │                           └── (ID, b)
+│   │               │   │   │                   │   │   │           └── (SYMBOL, ;)
+│   │               │   │   │                   │   │   └── statement
+│   │               │   │   │                   │   │       └── selection_stmt
+│   │               │   │   │                   │   │           ├── (KEYWORD, if)
+│   │               │   │   │                   │   │           ├── (SYMBOL, ()
+│   │               │   │   │                   │   │           ├── expression
+│   │               │   │   │                   │   │           │   └── simple_expression
+│   │               │   │   │                   │   │           │       ├── additive_expression
+│   │               │   │   │                   │   │           │       │   └── term
+│   │               │   │   │                   │   │           │       │       └── factor
+│   │               │   │   │                   │   │           │       │           └── var
+│   │               │   │   │                   │   │           │       │               └── (ID, a)
+│   │               │   │   │                   │   │           │       ├── relop
+│   │               │   │   │                   │   │           │       │   └── (SYMBOL, <)
+│   │               │   │   │                   │   │           │       └── additive_expression
+│   │               │   │   │                   │   │           │           └── term
+│   │               │   │   │                   │   │           │               └── factor
+│   │               │   │   │                   │   │           │                   └── (NUM, 0)
+│   │               │   │   │                   │   │           ├── (SYMBOL, ))
+│   │               │   │   │                   │   │           ├── statement
+│   │               │   │   │                   │   │           │   └── compound_stmt
+│   │               │   │   │                   │   │           │       ├── (SYMBOL, {)
+│   │               │   │   │                   │   │           │       ├── local_declarations
+│   │               │   │   │                   │   │           │       │   └── epsilon
+│   │               │   │   │                   │   │           │       ├── statement_list
+│   │               │   │   │                   │   │           │       │   ├── statement_list
+│   │               │   │   │                   │   │           │       │   │   └── epsilon
+│   │               │   │   │                   │   │           │       │   └── statement
+│   │               │   │   │                   │   │           │       │       └── expression_stmt
+│   │               │   │   │                   │   │           │       │           ├── (KEYWORD, break)
+│   │               │   │   │                   │   │           │       │           └── (SYMBOL, ;)
+│   │               │   │   │                   │   │           │       └── (SYMBOL, })
+│   │               │   │   │                   │   │           ├── (KEYWORD, else)
+│   │               │   │   │                   │   │           ├── statement
+│   │               │   │   │                   │   │           │   └── compound_stmt
+│   │               │   │   │                   │   │           │       ├── (SYMBOL, {)
+│   │               │   │   │                   │   │           │       ├── local_declarations
+│   │               │   │   │                   │   │           │       │   └── epsilon
+│   │               │   │   │                   │   │           │       ├── statement_list
+│   │               │   │   │                   │   │           │       │   ├── statement_list
+│   │               │   │   │                   │   │           │       │   │   └── epsilon
+│   │               │   │   │                   │   │           │       │   └── statement
+│   │               │   │   │                   │   │           │       │       └── expression_stmt
+│   │               │   │   │                   │   │           │       │           ├── expression
+│   │               │   │   │                   │   │           │       │           │   └── simple_expression
+│   │               │   │   │                   │   │           │       │           │       └── additive_expression
+│   │               │   │   │                   │   │           │       │           │           └── term
+│   │               │   │   │                   │   │           │       │           │               └── factor
+│   │               │   │   │                   │   │           │       │           │                   └── call
+│   │               │   │   │                   │   │           │       │           │                       ├── (ID, output)
+│   │               │   │   │                   │   │           │       │           │                       ├── (SYMBOL, ()
+│   │               │   │   │                   │   │           │       │           │                       ├── args
+│   │               │   │   │                   │   │           │       │           │                       │   └── arg_list
+│   │               │   │   │                   │   │           │       │           │                       │       └── expression
+│   │               │   │   │                   │   │           │       │           │                       │           └── simple_expression
+│   │               │   │   │                   │   │           │       │           │                       │               └── additive_expression
+│   │               │   │   │                   │   │           │       │           │                       │                   └── term
+│   │               │   │   │                   │   │           │       │           │                       │                       └── factor
+│   │               │   │   │                   │   │           │       │           │                       │                           └── var
+│   │               │   │   │                   │   │           │       │           │                       │                               └── (ID, a)
+│   │               │   │   │                   │   │           │       │           │                       └── (SYMBOL, ))
+│   │               │   │   │                   │   │           │       │           └── (SYMBOL, ;)
+│   │               │   │   │                   │   │           │       └── (SYMBOL, })
+│   │               │   │   │                   │   │           └── (KEYWORD, endif)
+│   │               │   │   │                   │   └── statement
+│   │               │   │   │                   │       └── selection_stmt
+│   │               │   │   │                   │           ├── (KEYWORD, if)
+│   │               │   │   │                   │           ├── (SYMBOL, ()
+│   │               │   │   │                   │           ├── expression
+│   │               │   │   │                   │           │   └── simple_expression
+│   │               │   │   │                   │           │       ├── additive_expression
+│   │               │   │   │                   │           │       │   └── term
+│   │               │   │   │                   │           │       │       └── factor
+│   │               │   │   │                   │           │       │           └── var
+│   │               │   │   │                   │           │       │               └── (ID, b)
+│   │               │   │   │                   │           │       ├── relop
+│   │               │   │   │                   │           │       │   └── (SYMBOL, <)
+│   │               │   │   │                   │           │       └── additive_expression
+│   │               │   │   │                   │           │           └── term
+│   │               │   │   │                   │           │               └── factor
+│   │               │   │   │                   │           │                   └── (NUM, 100)
+│   │               │   │   │                   │           ├── (SYMBOL, ))
+│   │               │   │   │                   │           ├── statement
+│   │               │   │   │                   │           │   └── expression_stmt
+│   │               │   │   │                   │           │       ├── (KEYWORD, break)
+│   │               │   │   │                   │           │       └── (SYMBOL, ;)
+│   │               │   │   │                   │           └── (KEYWORD, endif)
+│   │               │   │   │                   └── (SYMBOL, })
+│   │               │   │   └── statement
+│   │               │   │       └── expression_stmt
+│   │               │   │           ├── expression
+│   │               │   │           │   ├── var
+│   │               │   │           │   │   ├── (ID, c)
+│   │               │   │           │   │   ├── (SYMBOL, [)
+│   │               │   │           │   │   ├── expression
+│   │               │   │           │   │   │   └── simple_expression
+│   │               │   │           │   │   │       └── additive_expression
+│   │               │   │           │   │   │           └── term
+│   │               │   │           │   │   │               └── factor
+│   │               │   │           │   │   │                   └── (NUM, 0)
+│   │               │   │           │   │   └── (SYMBOL, ])
+│   │               │   │           │   ├── (SYMBOL, =)
+│   │               │   │           │   └── expression
+│   │               │   │           │       └── simple_expression
+│   │               │   │           │           └── additive_expression
+│   │               │   │           │               └── term
+│   │               │   │           │                   └── factor
+│   │               │   │           │                       └── var
+│   │               │   │           │                           └── (ID, global2)
+│   │               │   │           └── (SYMBOL, ;)
+│   │               │   └── statement
+│   │               │       └── return_stmt
+│   │               │           ├── (KEYWORD, return)
+│   │               │           └── (SYMBOL, ;)
+│   │               └── (SYMBOL, })
+│   └── declaration
+│       └── fun_declaration
+│           ├── type_specifier
+│           │   └── (KEYWORD, void)
+│           ├── (ID, main)
+│           ├── (SYMBOL, ()
+│           ├── params
+│           │   └── (KEYWORD, void)
+│           ├── (SYMBOL, ))
+│           └── compound_stmt
+│               ├── (SYMBOL, {)
+│               ├── local_declarations
+│               │   ├── local_declarations
+│               │   │   ├── local_declarations
+│               │   │   │   ├── local_declarations
+│               │   │   │   │   └── epsilon
+│               │   │   │   └── var_declaration
+│               │   │   │       ├── type_specifier
+│               │   │   │       │   └── (KEYWORD, int)
+│               │   │   │       ├── (ID, p)
+│               │   │   │       └── (SYMBOL, ;)
+│               │   │   └── var_declaration
+│               │   │       ├── type_specifier
+│               │   │       │   └── (KEYWORD, int)
+│               │   │       ├── (ID, i)
+│               │   │       └── (SYMBOL, ;)
+│               │   └── var_declaration
+│               │       ├── type_specifier
+│               │       │   └── (KEYWORD, int)
+│               │       ├── (ID, array)
+│               │       ├── (SYMBOL, [)
+│               │       ├── (NUM, 50)
+│               │       ├── (SYMBOL, ])
+│               │       └── (SYMBOL, ;)
+│               ├── statement_list
+│               │   ├── statement_list
+│               │   │   ├── statement_list
+│               │   │   │   ├── statement_list
+│               │   │   │   │   ├── statement_list
+│               │   │   │   │   │   ├── statement_list
+│               │   │   │   │   │   │   └── epsilon
+│               │   │   │   │   │   └── statement
+│               │   │   │   │   │       └── expression_stmt
+│               │   │   │   │   │           ├── expression
+│               │   │   │   │   │           │   ├── var
+│               │   │   │   │   │           │   │   └── (ID, p)
+│               │   │   │   │   │           │   ├── (SYMBOL, =)
+│               │   │   │   │   │           │   └── expression
+│               │   │   │   │   │           │       └── simple_expression
+│               │   │   │   │   │           │           └── additive_expression
+│               │   │   │   │   │           │               ├── additive_expression
+│               │   │   │   │   │           │               │   └── term
+│               │   │   │   │   │           │               │       └── factor
+│               │   │   │   │   │           │               │           └── (NUM, 2)
+│               │   │   │   │   │           │               ├── addop
+│               │   │   │   │   │           │               │   └── (SYMBOL, +)
+│               │   │   │   │   │           │               └── term
+│               │   │   │   │   │           │                   └── factor
+│               │   │   │   │   │           │                       └── (NUM, 1)
+│               │   │   │   │   │           └── (SYMBOL, ;)
+│               │   │   │   │   └── statement
+│               │   │   │   │       └── expression_stmt
+│               │   │   │   │           ├── expression
+│               │   │   │   │           │   ├── var
+│               │   │   │   │           │   │   └── (ID, i)
+│               │   │   │   │           │   ├── (SYMBOL, =)
+│               │   │   │   │           │   └── expression
+│               │   │   │   │           │       └── simple_expression
+│               │   │   │   │           │           └── additive_expression
+│               │   │   │   │           │               └── term
+│               │   │   │   │           │                   └── factor
+│               │   │   │   │           │                       └── (NUM, 1)
+│               │   │   │   │           └── (SYMBOL, ;)
+│               │   │   │   └── statement
+│               │   │   │       └── expression_stmt
+│               │   │   │           ├── expression
+│               │   │   │           │   └── simple_expression
+│               │   │   │           │       └── additive_expression
+│               │   │   │           │           └── term
+│               │   │   │           │               └── factor
+│               │   │   │           │                   └── call
+│               │   │   │           │                       ├── (ID, a)
+│               │   │   │           │                       ├── (SYMBOL, ()
+│               │   │   │           │                       ├── args
+│               │   │   │           │                       │   └── arg_list
+│               │   │   │           │                       │       ├── arg_list
+│               │   │   │           │                       │       │   ├── arg_list
+│               │   │   │           │                       │       │   │   └── expression
+│               │   │   │           │                       │       │   │       └── simple_expression
+│               │   │   │           │                       │       │   │           └── additive_expression
+│               │   │   │           │                       │       │   │               └── term
+│               │   │   │           │                       │       │   │                   └── factor
+│               │   │   │           │                       │       │   │                       └── var
+│               │   │   │           │                       │       │   │                           └── (ID, p)
+│               │   │   │           │                       │       │   ├── (SYMBOL, ,)
+│               │   │   │           │                       │       │   └── expression
+│               │   │   │           │                       │       │       └── simple_expression
+│               │   │   │           │                       │       │           └── additive_expression
+│               │   │   │           │                       │       │               └── term
+│               │   │   │           │                       │       │                   └── factor
+│               │   │   │           │                       │       │                       └── var
+│               │   │   │           │                       │       │                           └── (ID, i)
+│               │   │   │           │                       │       ├── (SYMBOL, ,)
+│               │   │   │           │                       │       └── expression
+│               │   │   │           │                       │           └── simple_expression
+│               │   │   │           │                       │               └── additive_expression
+│               │   │   │           │                       │                   └── term
+│               │   │   │           │                       │                       └── factor
+│               │   │   │           │                       │                           └── var
+│               │   │   │           │                       │                               └── (ID, array)
+│               │   │   │           │                       └── (SYMBOL, ))
+│               │   │   │           └── (SYMBOL, ;)
+│               │   │   └── statement
+│               │   │       └── expression_stmt
+│               │   │           ├── expression
+│               │   │           │   ├── var
+│               │   │           │   │   └── (ID, p)
+│               │   │           │   ├── (SYMBOL, =)
+│               │   │           │   └── expression
+│               │   │           │       └── simple_expression
+│               │   │           │           └── additive_expression
+│               │   │           │               └── term
+│               │   │           │                   └── factor
+│               │   │           │                       ├── (SYMBOL, ()
+│               │   │           │                       ├── expression
+│               │   │           │                       │   └── simple_expression
+│               │   │           │                       │       └── additive_expression
+│               │   │           │                       │           └── term
+│               │   │           │                       │               ├── term
+│               │   │           │                       │               │   └── factor
+│               │   │           │                       │               │       └── call
+│               │   │           │                       │               │           ├── (ID, a)
+│               │   │           │                       │               │           ├── (SYMBOL, ()
+│               │   │           │                       │               │           ├── args
+│               │   │           │                       │               │           │   └── arg_list
+│               │   │           │                       │               │           │       ├── arg_list
+│               │   │           │                       │               │           │       │   ├── arg_list
+│               │   │           │                       │               │           │       │   │   └── expression
+│               │   │           │                       │               │           │       │   │       └── simple_expression
+│               │   │           │                       │               │           │       │   │           └── additive_expression
+│               │   │           │                       │               │           │       │   │               └── term
+│               │   │           │                       │               │           │       │   │                   └── factor
+│               │   │           │                       │               │           │       │   │                       └── var
+│               │   │           │                       │               │           │       │   │                           └── (ID, p)
+│               │   │           │                       │               │           │       │   ├── (SYMBOL, ,)
+│               │   │           │                       │               │           │       │   └── expression
+│               │   │           │                       │               │           │       │       └── simple_expression
+│               │   │           │                       │               │           │       │           └── additive_expression
+│               │   │           │                       │               │           │       │               └── term
+│               │   │           │                       │               │           │       │                   └── factor
+│               │   │           │                       │               │           │       │                       └── var
+│               │   │           │                       │               │           │       │                           └── (ID, i)
+│               │   │           │                       │               │           │       ├── (SYMBOL, ,)
+│               │   │           │                       │               │           │       └── expression
+│               │   │           │                       │               │           │           └── simple_expression
+│               │   │           │                       │               │           │               └── additive_expression
+│               │   │           │                       │               │           │                   └── term
+│               │   │           │                       │               │           │                       └── factor
+│               │   │           │                       │               │           │                           └── var
+│               │   │           │                       │               │           │                               └── (ID, array)
+│               │   │           │                       │               │           └── (SYMBOL, ))
+│               │   │           │                       │               ├── mulop
+│               │   │           │                       │               │   └── (SYMBOL, *)
+│               │   │           │                       │               └── factor
+│               │   │           │                       │                   └── (NUM, 10)
+│               │   │           │                       └── (SYMBOL, ))
+│               │   │           └── (SYMBOL, ;)
+│               │   └── statement
+│               │       └── return_stmt
+│               │           ├── (KEYWORD, return)
+│               │           └── (SYMBOL, ;)
+│               └── (SYMBOL, })
+└── $

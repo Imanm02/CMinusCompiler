@@ -1,0 +1,21 @@
+/* sample 12 */
+
+void main(void){
+    int x; int y;
+	a = 5;
+    switch (fibonachi(a)) {
+       case 1 : {
+                 while(x<2){
+                 printf(x);
+                 x = x - 1;
+                 }
+              }
+       case 2 : {
+                if(x<y){
+                    printf(x);
+               } endif;
+              }
+       case 3 : x;
+       default : ;
+    }
+}

@@ -1,0 +1,27 @@
+/* sample 5 */
+
+int s(int array[], int len_array){
+  int index;
+  int tmp;
+  index = 0;
+  while(index < len_array - 1){
+      switch(array[index+1] < array[index]) {
+            case 1 : {
+                  tmp = array[index];
+                  array[index] = array[index+1];
+                  array[index+1] = tmp;
+                  index = index - 1;
+            }
+            case 2 : index = index + 1;
+      }
+  }
+}
+
+void main(void){
+	int array[5];
+	array[0] = 23*12;
+	array[1] = (23-12)*2/3;
+	array[2] = 1 + 1 - 2 * 3 / (4+112);
+    array[3] = 912;
+    s(array, 4);
+}

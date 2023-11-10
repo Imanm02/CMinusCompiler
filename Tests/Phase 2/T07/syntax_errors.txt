@@ -1,0 +1,26 @@
+#3 : syntax error , illegal {
+syntax error , discarded (KEYWORD, int) from stack
+#4 : syntax error , discarded int from input
+#4 : syntax error , missing type_specifier
+#4 : syntax error , illegal ;
+syntax error , discarded (ID, prod) from stack
+syntax error , discarded type_specifier from stack
+#5 : syntax error , discarded int from input
+#5 : syntax error , missing type_specifier
+#5 : syntax error , illegal ;
+syntax error , discarded (ID, i) from stack
+syntax error , discarded type_specifier from stack
+#6 : syntax error , missing type_specifier
+#6 : syntax error , illegal =
+syntax error , discarded (ID, prod) from stack
+syntax error , discarded type_specifier from stack
+#6 : syntax error , discarded 1 from input
+#6 : syntax error , discarded ; from input
+#7 : syntax error , missing type_specifier
+#7 : syntax error , illegal =
+syntax error , discarded (ID, i) from stack
+syntax error , discarded type_specifier from stack
+#7 : syntax error , discarded 1 from input
+#7 : syntax error , discarded ; from input
+#8 : syntax error , discarded } from input
+#9 : syntax error , Unexpected EOF

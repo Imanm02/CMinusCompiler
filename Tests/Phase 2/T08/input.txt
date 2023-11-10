@@ -1,0 +1,8 @@
+/* sample 8 */
+
+
+void main(void){
+    if (a<b)
+        b = a;
+    }endif
+}

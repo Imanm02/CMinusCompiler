@@ -1,0 +1,88 @@
+program
+├── declaration_list
+│   └── declaration
+│       └── fun_declaration
+│           ├── type_specifier
+│           │   └── (KEYWORD, void)
+│           ├── (ID, main)
+│           ├── (SYMBOL, ()
+│           ├── params
+│           │   └── (KEYWORD, void)
+│           ├── (SYMBOL, ))
+│           └── compound_stmt
+│               ├── (SYMBOL, {)
+│               ├── local_declarations
+│               │   ├── local_declarations
+│               │   │   ├── local_declarations
+│               │   │   │   └── epsilon
+│               │   │   └── var_declaration
+│               │   │       ├── type_specifier
+│               │   │       │   └── (KEYWORD, int)
+│               │   │       ├── (ID, a)
+│               │   │       └── (SYMBOL, ;)
+│               │   └── var_declaration
+│               │       ├── type_specifier
+│               │       │   └── (KEYWORD, int)
+│               │       ├── (ID, b)
+│               │       └── (SYMBOL, ;)
+│               ├── statement_list
+│               │   ├── statement_list
+│               │   │   ├── statement_list
+│               │   │   │   └── epsilon
+│               │   │   └── statement
+│               │   │       └── expression_stmt
+│               │   │           ├── expression
+│               │   │           │   ├── var
+│               │   │           │   │   └── (ID, a)
+│               │   │           │   ├── (SYMBOL, =)
+│               │   │           │   └── expression
+│               │   │           │       └── simple_expression
+│               │   │           │           └── additive_expression
+│               │   │           │               ├── additive_expression
+│               │   │           │               │   └── term
+│               │   │           │               │       └── factor
+│               │   │           │               │           └── var
+│               │   │           │               │               └── (ID, b)
+│               │   │           │               ├── addop
+│               │   │           │               │   └── (SYMBOL, +)
+│               │   │           │               └── term
+│               │   │           │                   └── factor
+│               │   │           │                       └── (NUM, 1)
+│               │   │           └── (SYMBOL, ;)
+│               │   └── statement
+│               │       └── return_stmt
+│               │           ├── (KEYWORD, return)
+│               │           ├── expression
+│               │           │   └── simple_expression
+│               │           │       └── additive_expression
+│               │           │           └── term
+│               │           │               ├── term
+│               │           │               │   └── factor
+│               │           │               │       ├── (SYMBOL, ()
+│               │           │               │       ├── expression
+│               │           │               │       │   └── simple_expression
+│               │           │               │       │       └── additive_expression
+│               │           │               │       │           ├── additive_expression
+│               │           │               │       │           │   └── term
+│               │           │               │       │           │       ├── term
+│               │           │               │       │           │       │   └── factor
+│               │           │               │       │           │       │       └── var
+│               │           │               │       │           │       │           └── (ID, a)
+│               │           │               │       │           │       ├── mulop
+│               │           │               │       │           │       │   └── (SYMBOL, *)
+│               │           │               │       │           │       └── factor
+│               │           │               │       │           │           └── var
+│               │           │               │       │           │               └── (ID, b)
+│               │           │               │       │           ├── addop
+│               │           │               │       │           │   └── (SYMBOL, -)
+│               │           │               │       │           └── term
+│               │           │               │       │               └── factor
+│               │           │               │       │                   └── (NUM, 10)
+│               │           │               │       └── (SYMBOL, ))
+│               │           │               ├── mulop
+│               │           │               │   └── (SYMBOL, /)
+│               │           │               └── factor
+│               │           │                   └── (NUM, 12)
+│               │           └── (SYMBOL, ;)
+│               └── (SYMBOL, })
+└── $

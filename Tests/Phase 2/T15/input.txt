@@ -1,0 +1,11 @@
+/* sample 15 */
+
+int global 1;
+
+void main(void){
+	int a[10]; int b;
+	print(a);
+	int c[10], int c;
+}
+
+int global2;

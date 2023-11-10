@@ -1,0 +1,42 @@
+program
+├── declaration_list
+│   └── declaration
+│       └── fun_declaration
+│           ├── type_specifier
+│           │   └── (KEYWORD, void)
+│           ├── (ID, main)
+│           ├── (SYMBOL, ()
+│           ├── params
+│           │   └── (KEYWORD, void)
+│           ├── (SYMBOL, ))
+│           └── compound_stmt
+│               ├── (SYMBOL, {)
+│               ├── local_declarations
+│               │   └── epsilon
+│               ├── statement_list
+│               │   ├── statement_list
+│               │   │   └── epsilon
+│               │   └── statement
+│               │       └── selection_stmt
+│               │           ├── (KEYWORD, if)
+│               │           ├── (SYMBOL, ()
+│               │           ├── expression
+│               │           │   └── simple_expression
+│               │           │       ├── additive_expression
+│               │           │       │   └── term
+│               │           │       │       └── factor
+│               │           │       │           └── var
+│               │           │       │               └── (ID, a)
+│               │           │       ├── relop
+│               │           │       │   └── (SYMBOL, <)
+│               │           │       └── additive_expression
+│               │           │           └── term
+│               │           │               └── factor
+│               │           │                   └── var
+│               │           │                       └── (ID, b)
+│               │           ├── (SYMBOL, ))
+│               │           ├── statement
+│               │           │   └── compound_stmt
+│               │           └── (KEYWORD, endif)
+│               └── (SYMBOL, })
+└── $

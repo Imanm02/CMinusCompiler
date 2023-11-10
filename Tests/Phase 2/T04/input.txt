@@ -1,0 +1,29 @@
+/* sample 4 */
+
+int fibonachi(int n){
+  if(n==1)
+     return 1;
+  endif
+  if(n==2)
+     return 2;
+  endif
+  return fibonachi(n) + fibonachi(n-1);
+}
+
+void main(void){
+	a = 5;
+    switch (fibonachi(a)) {
+       case 1 : 1;
+       case 2 : {
+                output(2);
+               }
+       case 3 :  3;
+       case 5 :  4;
+       default : exit();
+    }
+
+    switch (fibonachi(a)) {
+       case 1 : 1;
+       case 2:   ;
+    }
+}

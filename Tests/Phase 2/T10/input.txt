@@ -1,0 +1,19 @@
+/* sample 10 */
+
+int f(int a) {
+     void g(int b) {
+        output(b);
+        return f(b-1)+f(b-2);
+    }
+
+    if (a==0)
+        return 0;
+    else
+        return g(a);
+    endif
+}
+
+
+void main(void) {
+    f(10);
+}

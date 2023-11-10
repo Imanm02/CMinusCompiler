@@ -1,0 +1,33 @@
+/* sample 3 */
+
+int global1;
+int global2;
+
+int a(int a, int b, int c[]){
+   global1 = 0;
+   while(a<b){
+     global2 = global1 + c[a+b-1];
+     a = a - b;
+     if (a<0) {
+        break;
+     }else{
+        output(a);
+     }
+     endif
+     if (b<100)
+        break;
+     endif
+   }
+   c[0] = global2;
+   return;
+}
+void main(void){
+	int p;
+	int i;
+	int array[50];
+	p = 2 + 1;
+	i = 1;
+	a(p, i, array);
+	p = (a(p, i, array) * 10);
+	return;
+}

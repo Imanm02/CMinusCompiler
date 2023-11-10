@@ -1,0 +1,13 @@
+/* sample 13 */
+
+{
+  int a;
+}
+
+void main(void){
+   {
+        {
+
+        }
+   }
+}
