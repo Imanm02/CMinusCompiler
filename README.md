@@ -1,6 +1,6 @@
 # CMinusCompiler
 
-**Python3 based one-pass compiler for a simplified C-minus**
+**Python3 Based One-Pass Compiler for a Simplified C-Minus**
 
 ## Overview
 
